@@ -4,276 +4,267 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Products – Woodlam Interior Solutions | Premium Laminates Pune</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%233D2B1F'/><text y='.9em' font-size='72' font-family='Georgia,serif' fill='%23C9A96E' x='50%25' text-anchor='middle' dominant-baseline='hanging' dy='8'>W</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%233D2B1F'/><text font-size='72' font-family='Georgia,serif' fill='%23C9A96E' x='50%25' y='78' text-anchor='middle'>W</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --cream:#F5F0E8;--warm-white:#FAF7F2;--brown:#3D2B1F;--walnut:#6B4C3B;--gold:#C9A96E;--gold-light:#E8D5A3;--charcoal:#1E1E1E;--text-muted:#8A7060;--orange-accent:#E07840; }
-  * { margin:0;padding:0;box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
-  body { font-family:'DM Sans',sans-serif;background:#fff;color:var(--charcoal);overflow-x:hidden; }
-
-  nav { position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:0.9rem 3rem;background:rgba(20,18,16,0.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,0.07); }
-  .logo { font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;letter-spacing:0.06em;color:#fff;text-decoration:none; }
-  .logo span { color:var(--gold); }
-  nav ul { list-style:none;display:flex;gap:2rem;align-items:center; }
-  nav ul a { text-decoration:none;color:rgba(255,255,255,0.75);font-size:0.8rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s; }
-  nav ul a:hover, nav ul a.active { color:var(--gold); }
-  .nav-cta { background:var(--gold)!important;color:#1a1410!important;padding:0.55rem 1.3rem;border-radius:2px;font-weight:600!important; }
-
-  /* PAGE HERO */
-  .page-hero { min-height:45vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px; }
-  .page-hero-bg { position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&q=80');background-size:cover;background-position:center;animation:hz 12s ease-in-out infinite alternate; }
-  @keyframes hz { 0%{transform:scale(1)}100%{transform:scale(1.06)} }
-  .page-hero-bg::after { content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.75),rgba(0,0,0,0.3)); }
-  .page-hero-content { position:relative;z-index:2;padding:4rem 3rem; }
-  .page-eyebrow { font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500; }
-  .page-title { font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;color:#fff;line-height:1.1; }
-  .page-title em { font-style:italic;color:var(--gold); }
-
-  /* FILTER TABS */
-  .filter-bar { background:#fff;padding:2rem 3rem;border-bottom:1px solid rgba(0,0,0,0.08);display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:sticky;top:62px;z-index:100; }
-  .filter-tab { font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.6rem 1.4rem;border-radius:2px;cursor:pointer;font-weight:500;border:1.5px solid rgba(0,0,0,0.1);transition:all 0.2s;background:none;color:#777; }
-  .filter-tab.active { background:var(--charcoal);color:#fff;border-color:var(--charcoal); }
-  .filter-tab:hover:not(.active) { border-color:var(--gold);color:var(--gold); }
-
-  /* SECTION */
-  .product-section { padding:4rem 3rem; }
-  .section-label { font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem;display:block; }
-  .section-title { font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--charcoal);line-height:1.15;margin-bottom:0.8rem; }
-  .section-title em { font-style:italic;color:var(--gold); }
-  .section-desc { font-size:0.88rem;color:var(--text-muted);line-height:1.8;max-width:600px;margin-bottom:2.5rem; }
-
-  /* PRODUCT GRID */
-  .product-grid { display:grid;grid-template-columns:repeat(5,1fr);gap:1rem; }
-  .product-card { cursor:pointer;transition:transform 0.2s; }
-  .product-card:hover { transform:translateY(-4px); }
-  .product-swatch { width:100%;padding-bottom:120%;position:relative;border-radius:3px;overflow:hidden;margin-bottom:0.7rem;box-shadow:0 2px 12px rgba(0,0,0,0.08); }
-  .product-swatch-inner { position:absolute;inset:0; }
-  .product-swatch-inner::after { content:'';position:absolute;inset:0;opacity:0.25;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E");mix-blend-mode:overlay; }
-  .product-name { font-size:0.78rem;font-weight:500;color:var(--charcoal);margin-bottom:0.15rem; }
-  .product-meta { font-size:0.68rem;color:#999;letter-spacing:0.06em; }
-  .product-badge { display:inline-block;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--gold);color:#1a1410;padding:0.18rem 0.5rem;border-radius:1px;font-weight:600;margin-left:0.4rem;vertical-align:middle; }
-
-  /* SWATCH COLORS */
-  .c1{background:linear-gradient(160deg,#8B6332,#C9A55A 50%,#7A5520)}
-  .c2{background:linear-gradient(160deg,#5C3820,#8B5A38 50%,#4A2A14)}
-  .c3{background:linear-gradient(160deg,#C8B090,#A89070 50%,#D8C0A0)}
-  .c4{background:linear-gradient(160deg,#F0EDE8,#E0D8D0 50%,#F5F2EE)}
-  .c5{background:linear-gradient(160deg,#E8E5E0,#D5D0CA 50%,#EEEAE5)}
-  .c6{background:linear-gradient(160deg,#2A5C4A,#1A3C30 50%,#3A6A58)}
-  .c7{background:linear-gradient(160deg,#1A1A1A,#3A3A3A 50%,#282828)}
-  .c8{background:linear-gradient(160deg,#D88060,#C06040 50%,#E89070)}
-  .c9{background:linear-gradient(160deg,#8B4A3A,#6B3020 50%,#A05A48)}
-  .c10{background:linear-gradient(160deg,#EFEFEF,#D8D8D8 50%,#F5F5F5)}
-  .c11{background:linear-gradient(160deg,#3D2B1F,#6B4C3B 50%,#2A1810)}
-  .c12{background:linear-gradient(160deg,#C8C0B0,#A09880 50%,#D8D0C0)}
-  .c13{background:linear-gradient(160deg,#4A3828,#7A6050 50%,#3A2818)}
-  .c14{background:linear-gradient(160deg,#B8A890,#988870 50%,#C8B8A0)}
-  .c15{background:linear-gradient(160deg,#6B4820,#9B7840 50%,#5A3810)}
-
-  /* DIVIDER */
-  .brand-divider { background:var(--charcoal);padding:2rem 3rem;display:flex;align-items:center;justify-content:space-between; }
-  .brand-divider h2 { font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:#fff;letter-spacing:0.1em; }
-  .brand-divider h2 em { font-style:italic;color:var(--gold); }
-  .brand-divider p { font-size:0.82rem;color:rgba(255,255,255,0.5); }
-
-  /* APPLICATIONS */
-  .applications-section { background:var(--warm-white);padding:4rem 3rem; }
-  .app-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem; }
-  .app-card { background:#fff;border:1px solid rgba(0,0,0,0.07);padding:2rem;border-radius:3px;display:flex;gap:1.2rem;align-items:flex-start;transition:transform 0.2s,box-shadow 0.2s; }
-  .app-card:hover { transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,0.08); }
-  .app-icon { font-size:1.8rem;flex-shrink:0; }
-  .app-card h3 { font-size:0.95rem;font-weight:600;color:var(--charcoal);margin-bottom:0.4rem; }
-  .app-card p { font-size:0.82rem;color:var(--text-muted);line-height:1.6; }
-
-  /* CTA */
-  .cta-band { background:var(--brown);padding:4rem 3rem;text-align:center; }
-  .cta-band h2 { font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:#fff;margin-bottom:1rem; }
-  .cta-band h2 em { font-style:italic;color:var(--gold); }
-  .cta-band p { font-size:0.9rem;color:rgba(255,255,255,0.6);margin-bottom:2rem; }
-  .btn-gold { background:var(--gold);color:#1a1410;padding:0.85rem 2rem;text-decoration:none;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:background 0.2s,transform 0.2s;display:inline-block; }
-  .btn-gold:hover { background:var(--gold-light);transform:translateY(-1px); }
-  .btn-outline-white { background:transparent;color:#fff;padding:0.85rem 2rem;text-decoration:none;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:1.5px solid rgba(255,255,255,0.4);border-radius:2px;transition:all 0.2s;display:inline-block;margin-left:1rem; }
-  .btn-outline-white:hover { border-color:var(--gold);color:var(--gold); }
-
-  /* FOOTER */
-  footer { background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4rem 3rem 2rem; }
-  .footer-crest { text-align:center;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,0.06); }
-  .crest-symbol { font-family:'Cormorant Garamond',serif;font-size:3rem;color:var(--gold);line-height:1;display:block;margin-bottom:0.3rem; }
-  .crest-name { font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:rgba(255,255,255,0.8);letter-spacing:0.2em;text-transform:uppercase; }
-  .crest-tagline { font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-top:0.3rem; }
-  .footer-cols { display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem; }
-  .footer-about p { font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.8;margin-bottom:1.2rem; }
-  .footer-socials { display:flex;gap:0.7rem; }
-  .social-icon { width:34px;height:34px;border:1px solid rgba(255,255,255,0.15);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);font-size:0.8rem;text-decoration:none;transition:all 0.2s; }
-  .social-icon:hover { border-color:var(--gold);color:var(--gold); }
-  .footer-col h4 { font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:1.2rem;font-weight:500; }
-  .footer-col ul { list-style:none;display:flex;flex-direction:column;gap:0.65rem; }
-  .footer-col ul a { text-decoration:none;color:rgba(255,255,255,0.55);font-size:0.83rem;transition:color 0.2s; }
-  .footer-col ul a:hover { color:var(--gold); }
-  .footer-bottom { border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.75rem;color:rgba(255,255,255,0.25); }
-
-  .reveal { opacity:0;transform:translateY(24px);transition:opacity 0.7s,transform 0.7s; }
-  .reveal.visible { opacity:1;transform:translateY(0); }
-
-  @media (max-width:768px) {
-    nav { padding:0.9rem 1.2rem; } nav ul { display:none; }
-    .page-hero-content { padding:3rem 1.5rem; }
-    .product-grid { grid-template-columns:repeat(2,1fr); }
-    .app-grid { grid-template-columns:1fr; }
-    .product-section, .applications-section, .cta-band { padding-left:1.5rem;padding-right:1.5rem; }
-    .filter-bar { padding:1rem 1.2rem;top:56px; }
-    .brand-divider { flex-direction:column;gap:0.5rem;text-align:center;padding:1.5rem; }
-    .footer-cols { grid-template-columns:1fr 1fr;gap:2rem; }
-    .footer-bottom { flex-direction:column;gap:0.5rem;text-align:center; }
-  }
+:root{--cream:#F5F0E8;--warm-white:#FAF7F2;--brown:#3D2B1F;--walnut:#6B4C3B;--gold:#C9A96E;--gold-light:#E8D5A3;--charcoal:#1E1E1E;--muted:#8A7060;--orange:#E07840}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--charcoal);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:0 3rem;height:66px;background:rgba(15,11,8,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07);transition:box-shadow 0.3s}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:600;letter-spacing:0.06em;color:#fff;text-decoration:none}.logo span{color:var(--gold)}
+.nav-links{list-style:none;display:flex;gap:2rem;align-items:center}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.7);font-size:0.78rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:#1a1410!important;padding:0.5rem 1.3rem!important;border-radius:2px;font-weight:600!important}
+.nav-cta:hover{background:var(--gold-light)!important;color:#1a1410!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:1px}
+.mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;z-index:199;background:rgba(12,8,5,0.98);flex-direction:column;border-bottom:1px solid rgba(255,255,255,0.07)}
+.mobile-nav a{color:rgba(255,255,255,0.78);text-decoration:none;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 2rem;border-bottom:1px solid rgba(255,255,255,0.05);display:block}
+.mobile-nav a:hover{color:var(--gold)}.mobile-nav a:last-child{color:var(--gold);border:none}
+.btn-gold{background:var(--gold);color:#1a1410;padding:0.9rem 2.2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:background 0.2s,transform 0.2s;display:inline-block}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn-white{background:transparent;color:#fff;padding:0.9rem 2.2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:1.5px solid rgba(255,255,255,0.45);border-radius:2px;transition:all 0.2s;display:inline-block}
+.btn-white:hover{border-color:var(--gold);color:var(--gold)}
+.btn-dark{background:var(--charcoal);color:#fff;padding:0.9rem 2.2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:background 0.2s,transform 0.2s;display:inline-block}
+.btn-dark:hover{background:var(--walnut);transform:translateY(-2px)}
+/* HERO */
+.page-hero{min-height:60vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;animation:kz 14s ease-in-out infinite alternate}
+@keyframes kz{0%{transform:scale(1)}100%{transform:scale(1.07)}}
+.page-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.28) 100%)}
+.page-hero-body{position:relative;z-index:2;padding:130px 3rem 5rem;max-width:700px}
+.eyebrow{font-size:0.7rem;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500;display:block}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,5.2rem);font-weight:300;color:#fff;line-height:1.08;margin-bottom:1.2rem}
+.page-title em{font-style:italic;color:var(--gold)}
+.page-subtitle{font-size:0.92rem;color:rgba(255,255,255,0.65);max-width:460px;line-height:1.78}
+.label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.7rem}
+/* FILTER BAR */
+.filter-bar{background:#fff;padding:1.5rem 3rem;border-bottom:1px solid rgba(0,0,0,0.08);display:flex;align-items:center;gap:0.8rem;flex-wrap:wrap;position:sticky;top:66px;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.ftab{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.55rem 1.3rem;border-radius:2px;cursor:pointer;font-weight:500;border:1.5px solid rgba(0,0,0,0.1);transition:all 0.2s;background:none;color:#777}
+.ftab.active{background:var(--charcoal);color:#fff;border-color:var(--charcoal)}.ftab:hover:not(.active){border-color:var(--gold);color:var(--gold)}
+/* BRAND DIVIDERS */
+.brand-divider{background:var(--charcoal);padding:2rem 3rem;display:flex;align-items:center;justify-content:space-between;scroll-margin-top:130px}
+.brand-divider h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:#fff;letter-spacing:0.1em}
+.brand-divider h2 em{font-style:italic;color:var(--gold)}
+.brand-divider p{font-size:0.8rem;color:rgba(255,255,255,0.45);margin-top:0.2rem}
+.auth-tag{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.25)}
+/* PRODUCT SECTION */
+.prod-section{padding:3rem 3rem 4rem}
+.prod-section.warm{background:var(--warm-white)}
+.sec-desc{font-size:0.88rem;color:var(--muted);line-height:1.82;max-width:620px;margin-bottom:2.5rem}
+.prod-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.prod-card{cursor:pointer;transition:transform 0.2s}.prod-card:hover{transform:translateY(-4px)}
+.prod-swatch{width:100%;padding-bottom:120%;position:relative;border-radius:3px;overflow:hidden;margin-bottom:0.7rem;box-shadow:0 3px 14px rgba(0,0,0,0.1)}
+.prod-inner{position:absolute;inset:0}
+.c1{background:linear-gradient(160deg,#8B6332,#C9A55A 50%,#7A5520)}.c2{background:linear-gradient(160deg,#5C3820,#8B5A38 50%,#4A2A14)}.c3{background:linear-gradient(160deg,#C8B090,#A89070 50%,#D8C0A0)}.c4{background:linear-gradient(160deg,#F0EDE8,#E0D8D0 50%,#F5F2EE)}.c5{background:linear-gradient(160deg,#E8E5E0,#D5D0CA 50%,#EEEAE5)}.c6{background:linear-gradient(160deg,#2A5C4A,#1A3C30 50%,#3A6A58)}.c7{background:linear-gradient(160deg,#1A1A1A,#3A3A3A 50%,#282828)}.c8{background:linear-gradient(160deg,#D88060,#C06040 50%,#E89070)}.c9{background:linear-gradient(160deg,#8B4A3A,#6B3020 50%,#A05A48)}.c10{background:linear-gradient(160deg,#EFEFEF,#D8D8D8 50%,#F5F5F5)}.c11{background:linear-gradient(160deg,#3D2B1F,#6B4C3B 50%,#2A1810)}.c12{background:linear-gradient(160deg,#C8C0B0,#A09880 50%,#D8D0C0)}.c13{background:linear-gradient(160deg,#4A3828,#7A6050 50%,#3A2818)}.c14{background:linear-gradient(160deg,#B8A890,#988870 50%,#C8B8A0)}.c15{background:linear-gradient(160deg,#6B4820,#9B7840 50%,#5A3810)}
+.prod-inner::after{content:'';position:absolute;inset:0;opacity:0.25;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+.prod-name{font-size:0.78rem;font-weight:500;color:var(--charcoal);margin-bottom:0.15rem}
+.prod-meta{font-size:0.66rem;color:#999;letter-spacing:0.06em}
+.badge{display:inline-block;font-size:0.56rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--gold);color:#1a1410;padding:0.15rem 0.5rem;border-radius:1px;font-weight:600;margin-left:0.3rem;vertical-align:middle}
+/* APPLICATIONS */
+.app-section{padding:4rem 3rem;background:var(--warm-white)}
+.app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.app-card{background:#fff;border:1px solid rgba(0,0,0,0.07);padding:2rem;border-radius:3px;display:flex;gap:1.2rem;align-items:flex-start;transition:transform 0.2s,box-shadow 0.2s}
+.app-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+.app-icon{font-size:1.8rem;flex-shrink:0}
+.app-card h3{font-size:0.94rem;font-weight:600;color:var(--charcoal);margin-bottom:0.4rem}
+.app-card p{font-size:0.82rem;color:var(--muted);line-height:1.65}
+/* CTA */
+.cta-band{padding:5rem 3rem;text-align:center}
+.cta-band.dark{background:var(--charcoal)}.cta-band.brown{background:var(--brown)}
+.cta-band h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;margin-bottom:1rem}
+.cta-band.dark h2,.cta-band.brown h2{color:#fff}.cta-band h2 em{font-style:italic;color:var(--gold)}
+.cta-band p{font-size:0.9rem;margin-bottom:2.5rem}.cta-band.dark p,.cta-band.brown p{color:rgba(255,255,255,0.58)}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+/* FOOTER */
+footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5rem 3rem 2rem}
+.footer-crest{text-align:center;margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06)}
+.crest-sym{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--gold);display:block;line-height:1;margin-bottom:0.4rem}
+.crest-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:rgba(255,255,255,0.85);letter-spacing:0.22em;text-transform:uppercase}
+.crest-sub{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-top:0.3rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-about p{font-size:0.8rem;color:rgba(255,255,255,0.38);line-height:1.85;margin-bottom:1.2rem}
+.footer-socials{display:flex;gap:0.7rem}
+.soc{width:36px;height:36px;border:1px solid rgba(255,255,255,0.14);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.45);font-size:0.8rem;text-decoration:none;transition:all 0.2s}
+.soc:hover{border-color:var(--gold);color:var(--gold)}
+.footer-col h5{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:1.2rem;font-weight:500}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
+.footer-col ul a{text-decoration:none;color:rgba(255,255,255,0.5);font-size:0.82rem;transition:color 0.2s}.footer-col ul a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;color:rgba(255,255,255,0.22)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 0.7s,transform 0.7s}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+  nav{padding:0 1.5rem}.nav-links{display:none}.hamburger{display:flex}
+  .page-hero-body{padding:110px 1.5rem 4rem}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .app-grid{grid-template-columns:1fr}
+  .prod-section,.app-section,.cta-band{padding-left:1.5rem;padding-right:1.5rem}
+  .filter-bar{padding:1rem 1.2rem;top:66px}
+  .brand-divider{flex-direction:column;align-items:flex-start;gap:0.4rem;padding:1.5rem}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center}
+  .cta-btns{flex-direction:column;align-items:center}
+}
 </style>
 </head>
 <body>
 
-<nav>
+<!-- NAV -->
+<nav id="mainNav">
   <a href="index.html" class="logo">Wood<span>lam</span></a>
-  <ul>
+  <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="products.html" class="active">Products</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="contact.html" class="nav-cta">Visit Us</a></li>
   </ul>
+  <button class="hamburger" onclick="document.getElementById('mobileNav').style.display=document.getElementById('mobileNav').style.display==='flex'?'none':'flex'">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div id="mobileNav" class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html">Visit Our Showroom →</a>
+</div>
 
-<!-- PAGE HERO -->
+<!-- HERO -->
 <div class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-content">
-    <p class="page-eyebrow">Our Collection</p>
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80')"></div>
+  <div class="page-hero-body">
+    <span class="eyebrow">Our Collection</span>
     <h1 class="page-title">Premium <em>Laminates</em><br>Collection 2026</h1>
+    <p class="page-subtitle">Explore 500+ designs across Heritage, Hutch & Kiverli — for kitchens, wardrobes, walls, and every surface in between.</p>
   </div>
 </div>
 
 <!-- FILTER BAR -->
 <div class="filter-bar">
-  <button class="filter-tab active" onclick="filterBrand('all',this)">All Brands</button>
-  <button class="filter-tab" onclick="filterBrand('heritage',this)">Heritage</button>
-  <button class="filter-tab" onclick="filterBrand('hutch',this)">Hutch</button>
-  <button class="filter-tab" onclick="filterBrand('kiverli',this)">Kiverli</button>
-  <button class="filter-tab" onclick="filterBrand('wood',this)">Wood Grain</button>
-  <button class="filter-tab" onclick="filterBrand('solid',this)">Solid Colors</button>
-  <button class="filter-tab" onclick="filterBrand('stone',this)">Stone & Marble</button>
+  <button class="ftab active" onclick="filterProducts('all',this)">All Brands</button>
+  <button class="ftab" onclick="filterProducts('heritage',this)">Heritage</button>
+  <button class="ftab" onclick="filterProducts('hutch',this)">Hutch</button>
+  <button class="ftab" onclick="filterProducts('kiverli',this)">Kiverli</button>
+  <button class="ftab" onclick="filterProducts('wood',this)">Wood Grain</button>
+  <button class="ftab" onclick="filterProducts('solid',this)">Solid Colors</button>
+  <button class="ftab" onclick="filterProducts('stone',this)">Stone & Marble</button>
 </div>
 
 <!-- HERITAGE -->
-<div class="brand-divider" id="heritage">
+<div id="heritage" class="brand-divider">
   <div><h2><em>Heritage</em> Laminates</h2><p>Exclusive Range — Timeless & Contemporary Finishes</p></div>
-  <span style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.3);">Authorized Dealer</span>
+  <span class="auth-tag">Authorized Dealer</span>
 </div>
-<div class="product-section">
-  <p class="section-desc">Heritage laminates are crafted for furniture, cabinetry, and wall panels — available in wood, marble, solid, and abstract finishes with superior durability.</p>
-  <div class="product-grid">
-    <div class="product-card reveal" data-brand="heritage wood"><div class="product-swatch"><div class="product-swatch-inner c1"></div></div><div class="product-name">Natural Teak <span class="product-badge">Best Seller</span></div><div class="product-meta">Heritage · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="heritage wood"><div class="product-swatch"><div class="product-swatch-inner c2"></div></div><div class="product-name">Dark Wenge</div><div class="product-meta">Heritage · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="heritage wood"><div class="product-swatch"><div class="product-swatch-inner c3"></div></div><div class="product-name">Oak Honey</div><div class="product-meta">Heritage · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="heritage solid"><div class="product-swatch"><div class="product-swatch-inner c4"></div></div><div class="product-name">Pearl White</div><div class="product-meta">Heritage · Solid Matte</div></div>
-    <div class="product-card reveal" data-brand="heritage solid"><div class="product-swatch"><div class="product-swatch-inner c5"></div></div><div class="product-name">Warm Linen</div><div class="product-meta">Heritage · Solid Texture</div></div>
-    <div class="product-card reveal" data-brand="heritage stone"><div class="product-swatch"><div class="product-swatch-inner c12"></div></div><div class="product-name">Grey Marble</div><div class="product-meta">Heritage · Stone</div></div>
-    <div class="product-card reveal" data-brand="heritage stone"><div class="product-swatch"><div class="product-swatch-inner c14"></div></div><div class="product-name">Beige Travertine</div><div class="product-meta">Heritage · Stone</div></div>
-    <div class="product-card reveal" data-brand="heritage solid"><div class="product-swatch"><div class="product-swatch-inner c10"></div></div><div class="product-name">Arctic White</div><div class="product-meta">Heritage · Solid Gloss</div></div>
-    <div class="product-card reveal" data-brand="heritage wood"><div class="product-swatch"><div class="product-swatch-inner c15"></div></div><div class="product-name">Walnut Rustic</div><div class="product-meta">Heritage · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="heritage solid"><div class="product-swatch"><div class="product-swatch-inner c6"></div></div><div class="product-name">Forest Green</div><div class="product-meta">Heritage · Solid Matte</div></div>
+<div class="prod-section">
+  <p class="sec-desc">Heritage laminates are crafted for furniture, cabinetry, and wall panels. Available in wood, marble, solid, and abstract finishes with superior durability and a wide range of surface textures.</p>
+  <div class="prod-grid">
+    <div class="prod-card reveal" data-brand="heritage wood"><div class="prod-swatch"><div class="prod-inner c1"></div></div><div class="prod-name">Natural Teak <span class="badge">Best Seller</span></div><div class="prod-meta">Heritage · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="heritage wood"><div class="prod-swatch"><div class="prod-inner c2"></div></div><div class="prod-name">Dark Wenge</div><div class="prod-meta">Heritage · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="heritage wood"><div class="prod-swatch"><div class="prod-inner c3"></div></div><div class="prod-name">Oak Honey</div><div class="prod-meta">Heritage · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="heritage solid"><div class="prod-swatch"><div class="prod-inner c4"></div></div><div class="prod-name">Pearl White</div><div class="prod-meta">Heritage · Solid Matte</div></div>
+    <div class="prod-card reveal" data-brand="heritage solid"><div class="prod-swatch"><div class="prod-inner c5"></div></div><div class="prod-name">Warm Linen</div><div class="prod-meta">Heritage · Solid Texture</div></div>
+    <div class="prod-card reveal" data-brand="heritage stone"><div class="prod-swatch"><div class="prod-inner c12"></div></div><div class="prod-name">Grey Marble</div><div class="prod-meta">Heritage · Stone</div></div>
+    <div class="prod-card reveal" data-brand="heritage stone"><div class="prod-swatch"><div class="prod-inner c14"></div></div><div class="prod-name">Beige Travertine</div><div class="prod-meta">Heritage · Stone</div></div>
+    <div class="prod-card reveal" data-brand="heritage solid"><div class="prod-swatch"><div class="prod-inner c10"></div></div><div class="prod-name">Arctic White</div><div class="prod-meta">Heritage · Solid Gloss</div></div>
+    <div class="prod-card reveal" data-brand="heritage wood"><div class="prod-swatch"><div class="prod-inner c15"></div></div><div class="prod-name">Walnut Rustic</div><div class="prod-meta">Heritage · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="heritage solid"><div class="prod-swatch"><div class="prod-inner c6"></div></div><div class="prod-name">Forest Green</div><div class="prod-meta">Heritage · Solid Matte</div></div>
   </div>
 </div>
 
 <!-- HUTCH -->
-<div class="brand-divider" id="hutch">
+<div id="hutch" class="brand-divider">
   <div><h2><em>Hutch</em> Laminates</h2><p>New Collection — Modern & Bold Designs</p></div>
-  <span style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.3);">Authorized Dealer</span>
+  <span class="auth-tag">Authorized Dealer</span>
 </div>
-<div class="product-section" style="background:var(--warm-white);">
-  <p class="section-desc">Bold, contemporary, and built to last. Hutch offers a wide range of decorative laminates ideal for modern homes and commercial interiors.</p>
-  <div class="product-grid">
-    <div class="product-card reveal" data-brand="hutch solid"><div class="product-swatch"><div class="product-swatch-inner c8"></div></div><div class="product-name">Terra Salmon <span class="product-badge">New</span></div><div class="product-meta">Hutch · Solid Color</div></div>
-    <div class="product-card reveal" data-brand="hutch solid"><div class="product-swatch"><div class="product-swatch-inner c7"></div></div><div class="product-name">Matte Black</div><div class="product-meta">Hutch · Solid Matte</div></div>
-    <div class="product-card reveal" data-brand="hutch solid"><div class="product-swatch"><div class="product-swatch-inner c6"></div></div><div class="product-name">Teal Forest</div><div class="product-meta">Hutch · Solid Matte</div></div>
-    <div class="product-card reveal" data-brand="hutch stone"><div class="product-swatch"><div class="product-swatch-inner c12"></div></div><div class="product-name">Warm Grey Stone <span class="product-badge">Best Seller</span></div><div class="product-meta">Hutch · Stone Texture</div></div>
-    <div class="product-card reveal" data-brand="hutch solid"><div class="product-swatch"><div class="product-swatch-inner c10"></div></div><div class="product-name">Snow Gloss</div><div class="product-meta">Hutch · Solid Gloss</div></div>
-    <div class="product-card reveal" data-brand="hutch wood"><div class="product-swatch"><div class="product-swatch-inner c13"></div></div><div class="product-name">Ebony Dark</div><div class="product-meta">Hutch · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="hutch solid"><div class="product-swatch"><div class="product-swatch-inner c9"></div></div><div class="product-name">Rust Brown</div><div class="product-meta">Hutch · Solid Texture</div></div>
-    <div class="product-card reveal" data-brand="hutch solid"><div class="product-swatch"><div class="product-swatch-inner c5"></div></div><div class="product-name">Cream Texture</div><div class="product-meta">Hutch · Solid Texture</div></div>
-    <div class="product-card reveal" data-brand="hutch wood"><div class="product-swatch"><div class="product-swatch-inner c3"></div></div><div class="product-name">Maple Natural</div><div class="product-meta">Hutch · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="hutch stone"><div class="product-swatch"><div class="product-swatch-inner c4"></div></div><div class="product-name">White Onyx</div><div class="product-meta">Hutch · Stone</div></div>
+<div class="prod-section warm">
+  <p class="sec-desc">Bold, contemporary, and built to last. Hutch laminates bring vivid textures and colours to modern kitchens, offices, and living spaces across Pune.</p>
+  <div class="prod-grid">
+    <div class="prod-card reveal" data-brand="hutch solid"><div class="prod-swatch"><div class="prod-inner c8"></div></div><div class="prod-name">Terra Salmon <span class="badge">New</span></div><div class="prod-meta">Hutch · Solid Color</div></div>
+    <div class="prod-card reveal" data-brand="hutch solid"><div class="prod-swatch"><div class="prod-inner c7"></div></div><div class="prod-name">Matte Black</div><div class="prod-meta">Hutch · Solid Matte</div></div>
+    <div class="prod-card reveal" data-brand="hutch solid"><div class="prod-swatch"><div class="prod-inner c6"></div></div><div class="prod-name">Teal Forest</div><div class="prod-meta">Hutch · Solid Matte</div></div>
+    <div class="prod-card reveal" data-brand="hutch stone"><div class="prod-swatch"><div class="prod-inner c12"></div></div><div class="prod-name">Warm Grey Stone <span class="badge">Best Seller</span></div><div class="prod-meta">Hutch · Stone Texture</div></div>
+    <div class="prod-card reveal" data-brand="hutch solid"><div class="prod-swatch"><div class="prod-inner c10"></div></div><div class="prod-name">Snow Gloss</div><div class="prod-meta">Hutch · Solid Gloss</div></div>
+    <div class="prod-card reveal" data-brand="hutch wood"><div class="prod-swatch"><div class="prod-inner c13"></div></div><div class="prod-name">Ebony Dark</div><div class="prod-meta">Hutch · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="hutch solid"><div class="prod-swatch"><div class="prod-inner c9"></div></div><div class="prod-name">Rust Brown</div><div class="prod-meta">Hutch · Solid Texture</div></div>
+    <div class="prod-card reveal" data-brand="hutch solid"><div class="prod-swatch"><div class="prod-inner c5"></div></div><div class="prod-name">Cream Texture</div><div class="prod-meta">Hutch · Solid Texture</div></div>
+    <div class="prod-card reveal" data-brand="hutch wood"><div class="prod-swatch"><div class="prod-inner c3"></div></div><div class="prod-name">Maple Natural</div><div class="prod-meta">Hutch · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="hutch stone"><div class="prod-swatch"><div class="prod-inner c4"></div></div><div class="prod-name">White Onyx</div><div class="prod-meta">Hutch · Stone</div></div>
   </div>
 </div>
 
 <!-- KIVERLI -->
-<div class="brand-divider" id="kiverli">
+<div id="kiverli" class="brand-divider">
   <div><h2><em>Kiverli</em> Laminates</h2><p>Luxury Series — Exclusive Textures & Premium Quality</p></div>
-  <span style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.3);">Authorized Dealer</span>
+  <span class="auth-tag">Authorized Dealer</span>
 </div>
-<div class="product-section">
-  <p class="section-desc">Kiverli laminates bring a touch of luxury to any surface. Exclusive textures and premium quality for high-end residential and commercial spaces.</p>
-  <div class="product-grid">
-    <div class="product-card reveal" data-brand="kiverli wood"><div class="product-swatch"><div class="product-swatch-inner c11"></div></div><div class="product-name">Dark Walnut <span class="product-badge">Luxury</span></div><div class="product-meta">Kiverli · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="kiverli wood"><div class="product-swatch"><div class="product-swatch-inner c13"></div></div><div class="product-name">Dark Rosewood <span class="product-badge">Best Seller</span></div><div class="product-meta">Kiverli · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="kiverli solid"><div class="product-swatch"><div class="product-swatch-inner c8"></div></div><div class="product-name">Copper Blush</div><div class="product-meta">Kiverli · Solid Metallic</div></div>
-    <div class="product-card reveal" data-brand="kiverli solid"><div class="product-swatch"><div class="product-swatch-inner c7"></div></div><div class="product-name">Noir Gloss</div><div class="product-meta">Kiverli · Solid Gloss</div></div>
-    <div class="product-card reveal" data-brand="kiverli stone"><div class="product-swatch"><div class="product-swatch-inner c14"></div></div><div class="product-name">Champagne Marble</div><div class="product-meta">Kiverli · Stone</div></div>
-    <div class="product-card reveal" data-brand="kiverli solid"><div class="product-swatch"><div class="product-swatch-inner c15"></div></div><div class="product-name">Bronze Texture</div><div class="product-meta">Kiverli · Solid Texture</div></div>
-    <div class="product-card reveal" data-brand="kiverli wood"><div class="product-swatch"><div class="product-swatch-inner c2"></div></div><div class="product-name">Smoked Oak</div><div class="product-meta">Kiverli · Wood Grain</div></div>
-    <div class="product-card reveal" data-brand="kiverli stone"><div class="product-swatch"><div class="product-swatch-inner c12"></div></div><div class="product-name">Silver Travertine</div><div class="product-meta">Kiverli · Stone</div></div>
-    <div class="product-card reveal" data-brand="kiverli solid"><div class="product-swatch"><div class="product-swatch-inner c9"></div></div><div class="product-name">Terracotta Matte</div><div class="product-meta">Kiverli · Solid Matte</div></div>
-    <div class="product-card reveal" data-brand="kiverli solid"><div class="product-swatch"><div class="product-swatch-inner c5"></div></div><div class="product-name">Pearl Linen Matte <span class="product-badge">New</span></div><div class="product-meta">Kiverli · Solid Matte</div></div>
+<div class="prod-section">
+  <p class="sec-desc">Kiverli laminates bring a touch of luxury to any surface. Exclusive textures and premium quality for high-end residential and commercial spaces across Pune.</p>
+  <div class="prod-grid">
+    <div class="prod-card reveal" data-brand="kiverli wood"><div class="prod-swatch"><div class="prod-inner c11"></div></div><div class="prod-name">Dark Walnut <span class="badge">Luxury</span></div><div class="prod-meta">Kiverli · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="kiverli wood"><div class="prod-swatch"><div class="prod-inner c13"></div></div><div class="prod-name">Dark Rosewood <span class="badge">Best Seller</span></div><div class="prod-meta">Kiverli · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="kiverli solid"><div class="prod-swatch"><div class="prod-inner c8"></div></div><div class="prod-name">Copper Blush</div><div class="prod-meta">Kiverli · Solid Metallic</div></div>
+    <div class="prod-card reveal" data-brand="kiverli solid"><div class="prod-swatch"><div class="prod-inner c7"></div></div><div class="prod-name">Noir Gloss</div><div class="prod-meta">Kiverli · Solid Gloss</div></div>
+    <div class="prod-card reveal" data-brand="kiverli stone"><div class="prod-swatch"><div class="prod-inner c14"></div></div><div class="prod-name">Champagne Marble</div><div class="prod-meta">Kiverli · Stone</div></div>
+    <div class="prod-card reveal" data-brand="kiverli solid"><div class="prod-swatch"><div class="prod-inner c15"></div></div><div class="prod-name">Bronze Texture</div><div class="prod-meta">Kiverli · Solid Texture</div></div>
+    <div class="prod-card reveal" data-brand="kiverli wood"><div class="prod-swatch"><div class="prod-inner c2"></div></div><div class="prod-name">Smoked Oak</div><div class="prod-meta">Kiverli · Wood Grain</div></div>
+    <div class="prod-card reveal" data-brand="kiverli stone"><div class="prod-swatch"><div class="prod-inner c12"></div></div><div class="prod-name">Silver Travertine</div><div class="prod-meta">Kiverli · Stone</div></div>
+    <div class="prod-card reveal" data-brand="kiverli solid"><div class="prod-swatch"><div class="prod-inner c9"></div></div><div class="prod-name">Terracotta Matte</div><div class="prod-meta">Kiverli · Solid Matte</div></div>
+    <div class="prod-card reveal" data-brand="kiverli solid"><div class="prod-swatch"><div class="prod-inner c5"></div></div><div class="prod-name">Pearl Linen <span class="badge">New</span></div><div class="prod-meta">Kiverli · Solid Matte</div></div>
   </div>
 </div>
 
 <!-- APPLICATIONS -->
-<div class="applications-section">
-  <span class="section-label">Where to Use</span>
-  <h2 class="section-title">Laminates for <em>Every Space</em></h2>
+<div class="app-section">
+  <span class="label">Where to Use Them</span>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;margin-bottom:0.5rem">Laminates for <em style="font-style:italic;color:var(--gold)">Every Space</em></h2>
   <div class="app-grid">
-    <div class="app-card reveal"><div class="app-icon">🍳</div><div><h3>Kitchen Shutters</h3><p>Heat-resistant, moisture-proof laminates ideal for kitchen cabinets and shutters. Easy to clean and long-lasting.</p></div></div>
-    <div class="app-card reveal"><div class="app-icon">🚪</div><div><h3>Wardrobe Panels</h3><p>Beautiful, scratch-resistant finishes that make wardrobes look stunning while withstanding daily use.</p></div></div>
-    <div class="app-card reveal"><div class="app-icon">🏢</div><div><h3>Office Interiors</h3><p>Professional, durable laminates for office furniture, partitions, and reception areas.</p></div></div>
-    <div class="app-card reveal"><div class="app-icon">🛋️</div><div><h3>Living Room Furniture</h3><p>Elegant finishes for TV units, bookshelves, and accent furniture that transform your living space.</p></div></div>
-    <div class="app-card reveal"><div class="app-icon">🏨</div><div><h3>Commercial Spaces</h3><p>High-traffic, durable laminates for hotels, restaurants, retail stores, and commercial interiors.</p></div></div>
-    <div class="app-card reveal"><div class="app-icon">🪵</div><div><h3>Wall Cladding</h3><p>Feature wall panels and cladding that add depth and texture to any room without the cost of natural materials.</p></div></div>
+    <div class="app-card reveal"><div class="app-icon">🍳</div><div><h3>Kitchen Shutters</h3><p>Heat-resistant, moisture-proof laminates ideal for kitchen cabinets. Easy to clean and built to last years.</p><div style="margin-top:1rem"><a href="contact.html" class="btn-dark" style="font-size:0.75rem;padding:0.6rem 1.2rem">Get a Quote →</a></div></div></div>
+    <div class="app-card reveal"><div class="app-icon">🚪</div><div><h3>Wardrobe Panels</h3><p>Beautiful, scratch-resistant finishes that make wardrobes look stunning while withstanding daily use.</p><div style="margin-top:1rem"><a href="contact.html" class="btn-dark" style="font-size:0.75rem;padding:0.6rem 1.2rem">Get a Quote →</a></div></div></div>
+    <div class="app-card reveal"><div class="app-icon">🏢</div><div><h3>Office Interiors</h3><p>Professional, durable laminates for office furniture, partitions, and reception areas across Pune.</p><div style="margin-top:1rem"><a href="contact.html" class="btn-dark" style="font-size:0.75rem;padding:0.6rem 1.2rem">Get a Quote →</a></div></div></div>
+    <div class="app-card reveal"><div class="app-icon">🛋️</div><div><h3>Living Room Furniture</h3><p>Elegant finishes for TV units, bookshelves, and accent furniture that transform your living space.</p><div style="margin-top:1rem"><a href="contact.html" class="btn-dark" style="font-size:0.75rem;padding:0.6rem 1.2rem">Get a Quote →</a></div></div></div>
+    <div class="app-card reveal"><div class="app-icon">🏨</div><div><h3>Commercial Spaces</h3><p>High-traffic, durable laminates for hotels, restaurants, and retail stores across Maharashtra.</p><div style="margin-top:1rem"><a href="contact.html" class="btn-dark" style="font-size:0.75rem;padding:0.6rem 1.2rem">Get a Quote →</a></div></div></div>
+    <div class="app-card reveal"><div class="app-icon">🪵</div><div><h3>Wall Cladding</h3><p>Feature wall panels that add depth and texture to any room without the cost of natural materials.</p><div style="margin-top:1rem"><a href="contact.html" class="btn-dark" style="font-size:0.75rem;padding:0.6rem 1.2rem">Get a Quote →</a></div></div></div>
   </div>
 </div>
 
-<!-- CTA -->
-<div class="cta-band reveal">
-  <h2>Can't Find What You're Looking For?</h2>
-  <p>Visit our Pune showroom to explore our complete range of 500+ designs in person.</p>
-  <a href="contact.html" class="btn-gold">Visit Our Showroom</a>
-  <a href="contact.html" class="btn-outline-white">Send an Enquiry</a>
+<!-- CTA BAND -->
+<div class="cta-band brown reveal">
+  <span class="label">Visit Us in Pune</span>
+  <h2>Can't Find What You're <em>Looking For?</em></h2>
+  <p>Visit our showroom to explore our complete range of 500+ designs in person. Our team will guide you.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-gold">Visit Our Showroom</a>
+    <a href="contact.html" class="btn-white">Send an Enquiry</a>
+    <a href="about.html" class="btn-white">About Woodlam</a>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-crest"><span class="crest-symbol">⬡</span><div class="crest-name">Woodlam</div><div class="crest-tagline">Interior Solutions · Pune</div></div>
-  <div class="footer-cols">
-    <div class="footer-about"><p>Pune's exclusive destination for Heritage, Hutch & Kiverli laminates. Transforming interiors across homes, offices, and commercial spaces.</p><div class="footer-socials"><a href="#" class="social-icon">f</a><a href="#" class="social-icon">in</a><a href="#" class="social-icon">▶</a><a href="#" class="social-icon">◎</a></div></div>
-    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
-    <div class="footer-col"><h4>Products</h4><ul><li><a href="#heritage">Heritage Laminates</a></li><li><a href="#hutch">Hutch Laminates</a></li><li><a href="#kiverli">Kiverli Laminates</a></li></ul></div>
-    <div class="footer-col"><h4>Laminates For</h4><ul><li><a href="#">Kitchen Shutters</a></li><li><a href="#">Wardrobe Panels</a></li><li><a href="#">Wall Cladding</a></li><li><a href="#">Office Interiors</a></li></ul></div>
+  <div class="footer-crest"><span class="crest-sym">⬡</span><div class="crest-name">Woodlam</div><div class="crest-sub">Interior Solutions · Pune</div></div>
+  <div class="footer-grid">
+    <div class="footer-about"><p>Pune's exclusive destination for Heritage, Hutch & Kiverli laminates. Transforming interiors across homes, offices, and commercial spaces.</p><div class="footer-socials"><a href="#" class="soc">f</a><a href="#" class="soc">in</a><a href="#" class="soc">▶</a><a href="#" class="soc">◎</a></div></div>
+    <div class="footer-col"><h5>Pages</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div class="footer-col"><h5>Our Brands</h5><ul><li><a href="#heritage">Heritage</a></li><li><a href="#hutch">Hutch</a></li><li><a href="#kiverli">Kiverli</a></li></ul></div>
+    <div class="footer-col"><h5>Laminates For</h5><ul><li><a href="#">Kitchen Shutters</a></li><li><a href="#">Wardrobe Panels</a></li><li><a href="#">Wall Cladding</a></li><li><a href="#">Office Interiors</a></li></ul></div>
   </div>
   <div class="footer-bottom"><span>© 2026 Woodlam – Interior Solutions, Pune. All rights reserved.</span><span>Exclusive dealer of Heritage · Hutch · Kiverli</span></div>
 </footer>
 
 <script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 60); observer.unobserve(entry.target); } });
-  }, { threshold: 0.06 });
-  reveals.forEach(el => observer.observe(el));
-
-  function filterBrand(brand, btn) {
-    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.product-card').forEach(card => {
-      const b = card.dataset.brand || '';
-      card.style.display = (brand === 'all' || b.includes(brand)) ? 'block' : 'none';
-    });
-  }
+const reveals=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*60);obs.unobserve(e.target);}});},{threshold:0.06});
+reveals.forEach(el=>obs.observe(el));
+function filterProducts(brand,btn){
+  document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.prod-card').forEach(card=>{
+    const b=card.dataset.brand||'';
+    card.style.display=(brand==='all'||b.includes(brand))?'block':'none';
+  });
+}
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').style.boxShadow=window.scrollY>50?'0 4px 30px rgba(0,0,0,0.4)':'none';});
 </script>
 </body>
 </html>

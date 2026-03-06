@@ -4,207 +4,198 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us – Woodlam Interior Solutions | Pune</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%233D2B1F'/><text y='.9em' font-size='72' font-family='Georgia,serif' fill='%23C9A96E' x='50%25' text-anchor='middle' dominant-baseline='hanging' dy='8'>W</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%233D2B1F'/><text font-size='72' font-family='Georgia,serif' fill='%23C9A96E' x='50%25' y='78' text-anchor='middle'>W</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --cream: #F5F0E8; --warm-white: #FAF7F2; --brown: #3D2B1F; --walnut: #6B4C3B;
-    --gold: #C9A96E; --gold-light: #E8D5A3; --charcoal: #1E1E1E; --text-muted: #8A7060;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; background: #fff; color: var(--charcoal); overflow-x: hidden; }
-
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; justify-content: space-between; align-items: center; padding: 0.9rem 3rem; background: rgba(20,18,16,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; letter-spacing: 0.06em; color: #fff; text-decoration: none; }
-  .logo span { color: var(--gold); }
-  nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
-  nav ul a { text-decoration: none; color: rgba(255,255,255,0.75); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
-  nav ul a:hover, nav ul a.active { color: var(--gold); }
-  .nav-cta { background: var(--gold) !important; color: #1a1410 !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 600 !important; }
-
-  /* PAGE HERO */
-  .page-hero {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 80px;
-  }
-  .page-hero-bg {
-    position: absolute; inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1400&q=80');
-    background-size: cover;
-    background-position: center;
-    animation: heroZoom 12s ease-in-out infinite alternate;
-  }
-  @keyframes heroZoom { 0% { transform: scale(1); } 100% { transform: scale(1.06); } }
-  .page-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 100%); }
-  .page-hero-content { position: relative; z-index: 2; padding: 4rem 3rem; }
-  .page-eyebrow { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 500; }
-  .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 300; color: #fff; line-height: 1.1; }
-  .page-title em { font-style: italic; color: var(--gold); }
-
-  /* SECTIONS */
-  .section { padding: 5rem 3rem; }
-  .section-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; display: block; }
-  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--charcoal); line-height: 1.15; margin-bottom: 1.5rem; }
-  .section-title em { font-style: italic; color: var(--gold); }
-  .section-text { font-size: 0.95rem; color: var(--text-muted); line-height: 1.9; max-width: 700px; }
-  .section-text + .section-text { margin-top: 1.2rem; }
-
-  /* ABOUT GRID */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-  .about-image-box { position: relative; }
-  .about-img-main { width: 100%; height: 480px; object-fit: cover; border-radius: 4px; display: block; background: linear-gradient(160deg, #8B6332, #C9A55A 40%, #5C3F20); }
-  .about-img-float { position: absolute; bottom: -2rem; right: -2rem; width: 200px; height: 200px; background: var(--gold); border-radius: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 1.5rem; }
-  .about-img-float span:first-child { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--brown); font-weight: 400; line-height: 1; }
-  .about-img-float span:last-child { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brown); opacity: 0.8; margin-top: 0.3rem; }
-
-  /* VALUES */
-  .values-section { background: var(--charcoal); }
-  .values-section .section-title { color: #fff; }
-  .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
-  .value-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(201,169,110,0.15); padding: 2.5rem 2rem; border-radius: 3px; transition: border-color 0.3s, transform 0.3s; }
-  .value-card:hover { border-color: rgba(201,169,110,0.4); transform: translateY(-4px); }
-  .value-icon { font-size: 2rem; margin-bottom: 1.2rem; display: block; }
-  .value-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: #fff; margin-bottom: 0.8rem; font-weight: 400; }
-  .value-card p { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; }
-
-  /* BRANDS */
-  .brands-section { background: var(--warm-white); }
-  .brands-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
-  .brand-card { background: #fff; border: 1px solid rgba(201,169,110,0.2); padding: 2.5rem 2rem; border-radius: 4px; transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden; }
-  .brand-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
-  .brand-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(61,43,31,0.1); }
-  .brand-card:hover::before { transform: scaleX(1); }
-  .brand-icon { width: 56px; height: 56px; border-radius: 50%; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
-  .bi1 { background: linear-gradient(135deg, #C9A96E, #E8D5A3); }
-  .bi2 { background: linear-gradient(135deg, #3D2B1F, #6B4C3B); }
-  .bi3 { background: linear-gradient(135deg, #8B6914, #C9A55A); }
-  .brand-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 400; color: var(--charcoal); margin-bottom: 0.8rem; }
-  .brand-card p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.7; }
-  .brand-tag { display: inline-block; margin-top: 1.2rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--gold-light); padding-bottom: 2px; }
-
-  /* STATS */
-  .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--brown); }
-  .stat-item { padding: 3rem 2rem; border-right: 1px solid rgba(201,169,110,0.15); text-align: center; }
-  .stat-item:last-child { border-right: none; }
-  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--gold); font-weight: 300; display: block; line-height: 1; margin-bottom: 0.5rem; }
-  .stat-label { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,240,232,0.6); }
-
-  /* CTA */
-  .cta-band { background: var(--charcoal); padding: 4rem 3rem; text-align: center; }
-  .cta-band h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 300; color: #fff; margin-bottom: 1rem; }
-  .cta-band h2 em { font-style: italic; color: var(--gold); }
-  .cta-band p { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 2rem; }
-  .btn-gold { background: var(--gold); color: #1a1410; padding: 0.85rem 2rem; text-decoration: none; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; border-radius: 2px; transition: background 0.2s, transform 0.2s; display: inline-block; }
-  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
-  .btn-outline-white { background: transparent; color: #fff; padding: 0.85rem 2rem; text-decoration: none; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; border: 1.5px solid rgba(255,255,255,0.4); border-radius: 2px; transition: all 0.2s; display: inline-block; margin-left: 1rem; }
-  .btn-outline-white:hover { border-color: var(--gold); color: var(--gold); }
-
-  /* FOOTER */
-  footer { background: #111; border-top: 1px solid rgba(201,169,110,0.12); padding: 4rem 3rem 2rem; }
-  .footer-crest { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .crest-symbol { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--gold); line-height: 1; display: block; margin-bottom: 0.3rem; }
-  .crest-name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: rgba(255,255,255,0.8); letter-spacing: 0.2em; text-transform: uppercase; }
-  .crest-tagline { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-top: 0.3rem; }
-  .footer-cols { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
-  .footer-about p { font-size: 0.82rem; color: rgba(255,255,255,0.4); line-height: 1.8; margin-bottom: 1.2rem; }
-  .footer-socials { display: flex; gap: 0.7rem; }
-  .social-icon { width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.15); border-radius: 2px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); font-size: 0.8rem; text-decoration: none; transition: all 0.2s; }
-  .social-icon:hover { border-color: var(--gold); color: var(--gold); }
-  .footer-col h4 { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 1.2rem; font-weight: 500; }
-  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
-  .footer-col ul a { text-decoration: none; color: rgba(255,255,255,0.55); font-size: 0.83rem; transition: color 0.2s; }
-  .footer-col ul a:hover { color: var(--gold); }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: rgba(255,255,255,0.25); }
-
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s, transform 0.7s; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-
-  @media (max-width: 768px) {
-    nav { padding: 0.9rem 1.2rem; } nav ul { display: none; }
-    .page-hero-content { padding: 3rem 1.5rem; }
-    .about-grid, .values-grid, .brands-grid { grid-template-columns: 1fr; }
-    .about-img-float { display: none; }
-    .stats-strip { grid-template-columns: 1fr 1fr; }
-    .section { padding: 3rem 1.5rem; }
-    .footer-cols { grid-template-columns: 1fr 1fr; gap: 2rem; }
-    .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
-  }
+:root{--cream:#F5F0E8;--warm-white:#FAF7F2;--brown:#3D2B1F;--walnut:#6B4C3B;--gold:#C9A96E;--gold-light:#E8D5A3;--charcoal:#1E1E1E;--muted:#8A7060;--orange:#E07840}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--charcoal);overflow-x:hidden}
+/* NAV — identical across all pages */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:0 3rem;height:66px;background:rgba(15,11,8,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07);transition:box-shadow 0.3s}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:600;letter-spacing:0.06em;color:#fff;text-decoration:none}.logo span{color:var(--gold)}
+.nav-links{list-style:none;display:flex;gap:2rem;align-items:center}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.7);font-size:0.78rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:#1a1410!important;padding:0.5rem 1.3rem!important;border-radius:2px;font-weight:600!important;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--gold-light)!important;color:#1a1410!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:1px}
+.mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;z-index:199;background:rgba(12,8,5,0.98);flex-direction:column;border-bottom:1px solid rgba(255,255,255,0.07)}
+.mobile-nav a{color:rgba(255,255,255,0.78);text-decoration:none;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 2rem;border-bottom:1px solid rgba(255,255,255,0.05);display:block}
+.mobile-nav a:hover{color:var(--gold)}.mobile-nav a:last-child{color:var(--gold);border:none}
+/* BUTTONS */
+.btn-gold{background:var(--gold);color:#1a1410;padding:0.9rem 2.2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:background 0.2s,transform 0.2s;display:inline-block}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn-white{background:transparent;color:#fff;padding:0.9rem 2.2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:1.5px solid rgba(255,255,255,0.45);border-radius:2px;transition:all 0.2s;display:inline-block}
+.btn-white:hover{border-color:var(--gold);color:var(--gold)}
+.btn-dark{background:var(--charcoal);color:#fff;padding:0.9rem 2.2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:background 0.2s,transform 0.2s;display:inline-block}
+.btn-dark:hover{background:var(--walnut);transform:translateY(-2px)}
+/* HERO */
+.page-hero{min-height:60vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;animation:kz 14s ease-in-out infinite alternate}
+@keyframes kz{0%{transform:scale(1)}100%{transform:scale(1.07)}}
+.page-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.28) 100%)}
+.page-hero-body{position:relative;z-index:2;padding:130px 3rem 5rem;max-width:700px}
+.eyebrow{font-size:0.7rem;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500;display:block}
+.page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,5.2rem);font-weight:300;color:#fff;line-height:1.08;margin-bottom:1.2rem}
+.page-title em{font-style:italic;color:var(--gold)}
+.page-subtitle{font-size:0.92rem;color:rgba(255,255,255,0.65);max-width:460px;line-height:1.78}
+/* LABEL */
+.label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.7rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;margin-bottom:1.2rem}
+.sec-title em{font-style:italic;color:var(--gold)}
+.sec-text{font-size:0.9rem;color:var(--muted);line-height:1.88}
+/* SECTIONS */
+.section{padding:5rem 3rem}
+.section.warm{background:var(--warm-white)}.section.dark-bg{background:var(--charcoal)}
+/* ABOUT STORY */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.story-img{position:relative}
+.story-img-main{width:100%;height:480px;border-radius:4px;background:linear-gradient(160deg,#8B6332,#C9A55A 40%,#5C3F20);display:block;overflow:hidden}
+.story-img-main img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+.story-float{position:absolute;bottom:-2rem;right:-2rem;width:190px;height:190px;background:var(--gold);border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.5rem}
+.story-float big{font-family:'Cormorant Garamond',serif;font-size:3.2rem;color:var(--brown);font-weight:400;line-height:1}
+.story-float small{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--brown);opacity:0.75;margin-top:0.3rem;line-height:1.4}
+/* STATS */
+.stats-bar{display:grid;grid-template-columns:repeat(4,1fr);background:var(--brown)}
+.stat{padding:3rem 2rem;border-right:1px solid rgba(201,169,110,0.14);text-align:center}
+.stat:last-child{border-right:none}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:3.2rem;color:var(--gold);font-weight:300;display:block;line-height:1;margin-bottom:0.5rem}
+.stat-lbl{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(245,240,232,0.55)}
+/* VALUES */
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem}
+.val-card{background:rgba(255,255,255,0.05);border:1px solid rgba(201,169,110,0.14);padding:2.5rem 2rem;border-radius:3px;transition:border-color 0.3s,transform 0.3s}
+.val-card:hover{border-color:rgba(201,169,110,0.4);transform:translateY(-4px)}
+.val-icon{font-size:2rem;display:block;margin-bottom:1.2rem}
+.val-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#fff;margin-bottom:0.8rem;font-weight:400}
+.val-card p{font-size:0.84rem;color:rgba(255,255,255,0.52);line-height:1.72}
+/* BRANDS */
+.brands-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem}
+.brand-card{background:#fff;border:1px solid rgba(201,169,110,0.18);padding:2.5rem 2rem;border-radius:4px;transition:transform 0.3s,box-shadow 0.3s;position:relative;overflow:hidden}
+.brand-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
+.brand-card:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(61,43,31,0.1)}.brand-card:hover::before{transform:scaleX(1)}
+.brand-icon{width:56px;height:56px;border-radius:50%;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.bi1{background:linear-gradient(135deg,#C9A96E,#E8D5A3)}.bi2{background:linear-gradient(135deg,#3D2B1F,#6B4C3B)}.bi3{background:linear-gradient(135deg,#8B6914,#C9A55A)}
+.brand-card h3{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:400;color:var(--charcoal);margin-bottom:0.8rem}
+.brand-card p{font-size:0.85rem;color:var(--muted);line-height:1.72}
+.brand-tag{display:inline-block;margin-top:1.2rem;font-size:0.66rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--gold-light);padding-bottom:2px}
+/* CTA BAND */
+.cta-band{padding:5rem 3rem;text-align:center}
+.cta-band.dark{background:var(--charcoal)}.cta-band.brown{background:var(--brown)}
+.cta-band h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;margin-bottom:1rem}
+.cta-band.dark h2,.cta-band.brown h2{color:#fff}.cta-band h2 em{font-style:italic;color:var(--gold)}
+.cta-band p{font-size:0.9rem;margin-bottom:2.5rem}.cta-band.dark p,.cta-band.brown p{color:rgba(255,255,255,0.58)}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+/* FOOTER */
+footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5rem 3rem 2rem}
+.footer-crest{text-align:center;margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06)}
+.crest-sym{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--gold);display:block;line-height:1;margin-bottom:0.4rem}
+.crest-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:rgba(255,255,255,0.85);letter-spacing:0.22em;text-transform:uppercase}
+.crest-sub{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-top:0.3rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-about p{font-size:0.8rem;color:rgba(255,255,255,0.38);line-height:1.85;margin-bottom:1.2rem}
+.footer-socials{display:flex;gap:0.7rem}
+.soc{width:36px;height:36px;border:1px solid rgba(255,255,255,0.14);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.45);font-size:0.8rem;text-decoration:none;transition:all 0.2s}
+.soc:hover{border-color:var(--gold);color:var(--gold)}
+.footer-col h5{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:1.2rem;font-weight:500}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
+.footer-col ul a{text-decoration:none;color:rgba(255,255,255,0.5);font-size:0.82rem;transition:color 0.2s}.footer-col ul a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;color:rgba(255,255,255,0.22)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 0.7s,transform 0.7s}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+  nav{padding:0 1.5rem}.nav-links{display:none}.hamburger{display:flex}
+  .page-hero-body{padding:110px 1.5rem 4rem}
+  .story-grid,.values-grid,.brands-grid{grid-template-columns:1fr}
+  .story-float{display:none}.stats-bar{grid-template-columns:1fr 1fr}
+  .section{padding:3rem 1.5rem}.cta-band{padding:4rem 1.5rem}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .footer-bottom{flex-direction:column;gap:0.5rem;text-align:center}
+  .cta-btns{flex-direction:column;align-items:center}
+}
 </style>
 </head>
 <body>
 
-<nav>
+<!-- NAV -->
+<nav id="mainNav">
   <a href="index.html" class="logo">Wood<span>lam</span></a>
-  <ul>
+  <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html" class="active">About Us</a></li>
     <li><a href="products.html">Products</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="contact.html" class="nav-cta">Visit Us</a></li>
   </ul>
+  <button class="hamburger" onclick="document.getElementById('mobileNav').style.display=document.getElementById('mobileNav').style.display==='flex'?'none':'flex'">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div id="mobileNav" class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html">Visit Our Showroom →</a>
+</div>
 
-<!-- PAGE HERO -->
+<!-- HERO -->
 <div class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-content">
-    <p class="page-eyebrow">Our Story</p>
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1600&q=80')"></div>
+  <div class="page-hero-body">
+    <span class="eyebrow">Our Story</span>
     <h1 class="page-title">About <em>Woodlam</em><br>Interior Solutions</h1>
+    <p class="page-subtitle">Pune's exclusive destination for Heritage, Hutch & Kiverli laminates — helping homes and businesses find their perfect finish.</p>
   </div>
 </div>
 
-<!-- ABOUT STORY -->
+<!-- STORY -->
 <div class="section">
-  <div class="about-grid">
+  <div class="story-grid">
     <div class="reveal">
-      <span class="section-label">Who We Are</span>
-      <h2 class="section-title">Pune's Trusted Name in <em>Premium Laminates</em></h2>
-      <p class="section-text">Woodlam – Interior Solutions is Pune's exclusive destination for Heritage, Hutch, and Kiverli laminates. We are passionate about helping homeowners, interior designers, and architects discover the perfect surface finish for every project — from residential kitchens and wardrobes to large commercial interiors.</p>
-      <p class="section-text" style="margin-top:1.2rem;">As an exclusive authorized dealer for three of the industry's most respected laminate brands, we offer access to the complete range — including limited editions and new launches — before anyone else in the region.</p>
-      <p class="section-text" style="margin-top:1.2rem;">Our showroom in Pune is designed to give you a hands-on experience — feel the textures, see the finishes in person, and get expert guidance from our team to make the right choice for your space.</p>
-    </div>
-    <div class="about-image-box reveal">
-      <div class="about-img-main" style="background:linear-gradient(160deg,#8B6332,#C9A55A 40%,#5C3F20);height:480px;border-radius:4px;">
-        <!-- Replace with your actual showroom image: <img src="images/showroom.jpg" style="width:100%;height:480px;object-fit:cover;border-radius:4px;" alt="Woodlam Showroom"> -->
+      <span class="label">Who We Are</span>
+      <h2 class="sec-title">Pune's Trusted Name in <em>Premium Laminates</em></h2>
+      <p class="sec-text">Woodlam – Interior Solutions is Pune's exclusive destination for Heritage, Hutch, and Kiverli laminates. We are passionate about helping homeowners, interior designers, and architects discover the perfect surface finish for every project.</p>
+      <p class="sec-text" style="margin-top:1.2rem">As an exclusive authorized dealer for three of the industry's most respected laminate brands, we offer the complete range — including limited editions and new launches — before anyone else in the region.</p>
+      <p class="sec-text" style="margin-top:1.2rem">Our showroom in Pune is designed to give you a hands-on experience. Feel the textures, see finishes in person, and get expert guidance to make the right choice for your space.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.5rem">
+        <a href="products.html" class="btn-gold">View Our Products</a>
+        <a href="contact.html" class="btn-dark">Visit Showroom</a>
       </div>
-      <div class="about-img-float">
-        <span>3</span>
-        <span>Premium Exclusive Brands</span>
+    </div>
+    <div class="story-img reveal">
+      <div class="story-img-main" style="background:linear-gradient(160deg,#8B6332,#C9A55A 40%,#5C3F20)"></div>
+      <div class="story-float">
+        <big>3</big>
+        <small>Premium Exclusive Brands</small>
       </div>
     </div>
   </div>
 </div>
 
 <!-- STATS -->
-<div class="stats-strip">
-  <div class="stat-item reveal"><span class="stat-num">500+</span><span class="stat-label">Laminate Designs</span></div>
-  <div class="stat-item reveal"><span class="stat-num">3</span><span class="stat-label">Exclusive Brands</span></div>
-  <div class="stat-item reveal"><span class="stat-num">100%</span><span class="stat-label">Genuine Products</span></div>
-  <div class="stat-item reveal"><span class="stat-num">1</span><span class="stat-label">Destination in Pune</span></div>
+<div class="stats-bar">
+  <div class="stat reveal"><span class="stat-num">500+</span><span class="stat-lbl">Laminate Designs</span></div>
+  <div class="stat reveal"><span class="stat-num">3</span><span class="stat-lbl">Exclusive Brands</span></div>
+  <div class="stat reveal"><span class="stat-num">100%</span><span class="stat-lbl">Genuine Products</span></div>
+  <div class="stat reveal"><span class="stat-num">#1</span><span class="stat-lbl">Destination in Pune</span></div>
 </div>
 
 <!-- VALUES -->
-<div class="section values-section">
-  <span class="section-label" style="color:var(--gold);">Our Values</span>
-  <h2 class="section-title">What Drives <em>Everything</em> We Do</h2>
+<div class="section dark-bg">
+  <span class="label">Our Values</span>
+  <h2 class="sec-title" style="color:#fff">What Drives <em>Everything</em> We Do</h2>
   <div class="values-grid">
-    <div class="value-card reveal">
-      <span class="value-icon">🏆</span>
+    <div class="val-card reveal">
+      <span class="val-icon">🏆</span>
       <h3>Authenticity</h3>
-      <p>Every product we stock is 100% genuine, sourced directly from the brands. We never compromise on quality or authenticity — your trust means everything to us.</p>
+      <p>Every product we stock is 100% genuine, sourced directly from the brands. We never compromise on quality or authenticity — your trust is everything to us.</p>
     </div>
-    <div class="value-card reveal">
-      <span class="value-icon">🎨</span>
+    <div class="val-card reveal">
+      <span class="val-icon">🎨</span>
       <h3>Expert Guidance</h3>
       <p>Our team has deep knowledge of laminates — finishes, applications, durability. We guide every customer to the right choice, not just the most expensive one.</p>
     </div>
-    <div class="value-card reveal">
-      <span class="value-icon">🤝</span>
+    <div class="val-card reveal">
+      <span class="val-icon">🤝</span>
       <h3>Partnership</h3>
       <p>We think of ourselves as long-term partners to the architects, designers, and homeowners we serve. Your project's success is our success.</p>
     </div>
@@ -212,72 +203,62 @@
 </div>
 
 <!-- BRANDS -->
-<div class="section brands-section">
-  <span class="section-label">Our Exclusive Brands</span>
-  <h2 class="section-title">Three <em>Premium</em> Labels, One Trusted Store</h2>
+<div class="section warm">
+  <span class="label">Our Exclusive Brands</span>
+  <h2 class="sec-title">Three <em>Premium</em> Labels, One Trusted Store</h2>
   <div class="brands-grid">
     <div class="brand-card reveal">
       <div class="brand-icon bi1">🌿</div>
       <h3>Heritage</h3>
       <p>Timeless designs that stand the test of time. Heritage laminates offer an exceptional range of wood, stone, and abstract finishes for furniture, wall panels, and cabinetry.</p>
       <span class="brand-tag">Classic & Contemporary Finishes</span>
+      <div style="margin-top:1.5rem"><a href="products.html#heritage" class="btn-dark">View Heritage →</a></div>
     </div>
     <div class="brand-card reveal">
       <div class="brand-icon bi2">🔲</div>
       <h3>Hutch</h3>
-      <p>Bold, modern, and built to perform. Hutch laminates are crafted for today's design-forward interiors with vibrant textures for kitchens, office spaces, and living areas.</p>
+      <p>Bold, modern, and built to perform. Hutch laminates are crafted for today's design-forward interiors with vibrant textures for kitchens, offices, and living areas.</p>
       <span class="brand-tag">Modern & Bold Designs</span>
+      <div style="margin-top:1.5rem"><a href="products.html#hutch" class="btn-dark">View Hutch →</a></div>
     </div>
     <div class="brand-card reveal">
       <div class="brand-icon bi3">✨</div>
       <h3>Kiverli</h3>
       <p>Where luxury meets function. Kiverli's exclusive textures are designed for spaces that demand the extraordinary — from high-end residential to premium commercial interiors.</p>
       <span class="brand-tag">Luxury & Exclusive Range</span>
+      <div style="margin-top:1.5rem"><a href="products.html#kiverli" class="btn-dark">View Kiverli →</a></div>
     </div>
   </div>
 </div>
 
-<!-- CTA -->
-<div class="cta-band reveal">
-  <h2>Come Visit Our <em>Showroom</em></h2>
-  <p>Experience hundreds of laminate textures and finishes in person at our Pune showroom.</p>
-  <a href="contact.html" class="btn-gold">Get Directions</a>
-  <a href="products.html" class="btn-outline-white">View Products</a>
+<!-- CTA BAND -->
+<div class="cta-band dark reveal">
+  <span class="label">Come See Us</span>
+  <h2>Visit Our <em>Showroom</em> in Pune</h2>
+  <p>Experience 500+ laminate textures and finishes in person. Our team is ready to help.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-gold">Get Directions & Hours</a>
+    <a href="products.html" class="btn-white">Browse Products</a>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-crest">
-    <span class="crest-symbol">⬡</span>
-    <div class="crest-name">Woodlam</div>
-    <div class="crest-tagline">Interior Solutions · Pune</div>
+  <div class="footer-crest"><span class="crest-sym">⬡</span><div class="crest-name">Woodlam</div><div class="crest-sub">Interior Solutions · Pune</div></div>
+  <div class="footer-grid">
+    <div class="footer-about"><p>Pune's exclusive destination for Heritage, Hutch & Kiverli laminates. Transforming interiors across homes, offices, and commercial spaces.</p><div class="footer-socials"><a href="#" class="soc">f</a><a href="#" class="soc">in</a><a href="#" class="soc">▶</a><a href="#" class="soc">◎</a></div></div>
+    <div class="footer-col"><h5>Pages</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div class="footer-col"><h5>Our Brands</h5><ul><li><a href="products.html#heritage">Heritage</a></li><li><a href="products.html#hutch">Hutch</a></li><li><a href="products.html#kiverli">Kiverli</a></li><li><a href="products.html">Best Sellers</a></li></ul></div>
+    <div class="footer-col"><h5>Laminates For</h5><ul><li><a href="products.html">Kitchen Shutters</a></li><li><a href="products.html">Wardrobe Panels</a></li><li><a href="products.html">Wall Cladding</a></li><li><a href="products.html">Office Interiors</a></li></ul></div>
   </div>
-  <div class="footer-cols">
-    <div class="footer-about">
-      <p>Pune's exclusive destination for Heritage, Hutch & Kiverli laminates. Transforming interiors across homes, offices, and commercial spaces.</p>
-      <div class="footer-socials">
-        <a href="#" class="social-icon">f</a>
-        <a href="#" class="social-icon">in</a>
-        <a href="#" class="social-icon">▶</a>
-        <a href="#" class="social-icon">◎</a>
-      </div>
-    </div>
-    <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
-    <div class="footer-col"><h4>Products</h4><ul><li><a href="products.html">Heritage Laminates</a></li><li><a href="products.html">Hutch Laminates</a></li><li><a href="products.html">Kiverli Laminates</a></li><li><a href="products.html">Best Sellers</a></li></ul></div>
-    <div class="footer-col"><h4>Laminates For</h4><ul><li><a href="products.html">Kitchen Shutters</a></li><li><a href="products.html">Wardrobe Panels</a></li><li><a href="products.html">Wall Cladding</a></li><li><a href="products.html">Furniture Finish</a></li></ul></div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Woodlam – Interior Solutions, Pune. All rights reserved.</span>
-    <span>Exclusive dealer of Heritage · Hutch · Kiverli</span>
-  </div>
+  <div class="footer-bottom"><span>© 2026 Woodlam – Interior Solutions, Pune. All rights reserved.</span><span>Exclusive dealer of Heritage · Hutch · Kiverli</span></div>
 </footer>
 
 <script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 80); observer.unobserve(entry.target); } });
-  }, { threshold: 0.08 });
-  reveals.forEach(el => observer.observe(el));
+const reveals=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target);}});},{threshold:0.08});
+reveals.forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').style.boxShadow=window.scrollY>50?'0 4px 30px rgba(0,0,0,0.4)':'none';});
 </script>
 </body>
 </html>
