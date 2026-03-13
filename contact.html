@@ -149,7 +149,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 
 <!-- HERO -->
 <div class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1600&q=80')"></div>
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1600&q=85')"></div>
   <div class="page-hero-body">
     <span class="eyebrow">We're Here to Help</span>
     <h1 class="page-title">Contact <em>Woodlam</em></h1>
@@ -174,9 +174,10 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
           <strong>Store Address</strong>
           <p>
             Woodlam – Interior Solutions<br>
-            Shop No. 3, Business Plaza.<br>
-            Timber Market.<br>
-            Pune, Maharashtra – 411042<br>
+            [Shop No. / Building Name],<br>
+            [Street Name], [Area / Locality],<br>
+            Pune, Maharashtra – [PIN Code]<br>
+            <span style="font-size:0.78rem;color:rgba(201,169,110,0.55)">Near: [Landmark]</span>
           </p>
         </div>
       </div>
@@ -186,7 +187,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
         <div class="info-icon">📞</div>
         <div class="info-text">
           <strong>Phone</strong>
-          <p><a href="tel:+918468947191">+91 8468947191</a></p>
+          <p><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
         </div>
       </div>
 
@@ -195,7 +196,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
         <div class="info-icon">📧</div>
         <div class="info-text">
           <strong>Email</strong>
-          <p><a href="mailto:info@woodlam.co">info@woodlam.co</a></p>
+          <p><a href="/cdn-cgi/l/email-protection#f1989f979eb1869e9e959d909cdf929e"><span class="__cf_email__" data-cfemail="5f363139301f2830303b333e32713c30">[email&#160;protected]</span></a></p>
         </div>
       </div>
 
@@ -228,7 +229,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
     <form class="contact-form" onsubmit="handleSubmit(event)">
       <div class="form-row">
         <div class="fg"><label>Your Name *</label><input type="text" placeholder="Rahul Sharma" required></div>
-        <div class="fg"><label>Phone Number *</label><input type="tel" placeholder="+91 9876543218" required></div>
+        <div class="fg"><label>Phone Number *</label><input type="tel" placeholder="+91 98765 43210" required></div>
       </div>
       <div class="fg"><label>Email Address</label><input type="email" placeholder="rahul@example.com"></div>
       <div class="fg">
@@ -278,7 +279,12 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
     6. Make sure the iframe has: width="100%" height="450" style="border:0;"
     ══════════════════════════════════════════════════
     -->
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.465856900341!2d73.86286427459054!3d18.507838682583245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c03ff4ed8ac7%3A0xccd125ae2518c79f!2sWoodlam!5e0!3m2!1sen!2sus!4v1772758160686!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-placeholder">
+      <span class="map-icon">🗺️</span>
+      <h3>Add Your Google Map Here</h3>
+      <p>Go to maps.google.com → Search your address → Share → Embed a map → Copy & paste the iframe code here</p>
+      <code>Delete this div and paste your &lt;iframe&gt; code</code>
+    </div>
   </div>
 </div>
 
@@ -305,7 +311,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
   <div class="footer-bottom"><span>© 2026 Woodlam – Interior Solutions, Pune. All rights reserved.</span><span>Exclusive dealer of Heritage · Hutch · Kiverli</span></div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const reveals=document.querySelectorAll('.reveal');
 const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target);}});},{threshold:0.08});
 reveals.forEach(el=>obs.observe(el));
@@ -313,9 +319,4 @@ function handleSubmit(e){
   e.preventDefault();
   const btn=e.target.querySelector('.form-submit');
   btn.textContent='✓ Enquiry Sent!';btn.style.background='#2d6a4f';
-  setTimeout(()=>{btn.textContent='Send Enquiry →';btn.style.background='';e.target.reset();},3000);
-}
-window.addEventListener('scroll',()=>{document.getElementById('mainNav').style.boxShadow=window.scrollY>50?'0 4px 30px rgba(0,0,0,0.4)':'none';});
-</script>
-</body>
-</html>
+  setTimeout(()=>{btn.textContent='Send Enq
