@@ -10,7 +10,7 @@
 /* ===================== SHARED RESET & VARIABLES ===================== */
 :root{
   --cream:#F5F0E8; --warm-white:#FAF7F2; --brown:#3D2B1F; --walnut:#6B4C3B;
-  --gold:#C9A96E; --gold-light:#E8D5A3; --charcoal:#1E1E1E; --muted:#8A7060; --orange:#E07840;
+  --gold:#C9A96E; --gold-light:#E8D5A3; --charcoal:#1E1E1E; --muted:#5C4840; --orange:#E07840;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -29,14 +29,14 @@ nav{
 .logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:600;letter-spacing:0.06em;color:#fff;text-decoration:none}
 .logo span{color:var(--gold)}
 .nav-links{list-style:none;display:flex;gap:2rem;align-items:center}
-.nav-links a{text-decoration:none;color:rgba(255,255,255,0.7);font-size:0.78rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;transition:color 0.2s;padding:0.3rem 0}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.88);font-size:0.78rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;transition:color 0.2s;padding:0.3rem 0}
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
 .nav-cta{background:var(--gold)!important;color:#1a1410!important;padding:0.5rem 1.3rem!important;border-radius:2px;font-weight:600!important;transition:background 0.2s!important}
 .nav-cta:hover{background:var(--gold-light)!important;color:#1a1410!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:1px;transition:all 0.3s}
 .mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;z-index:199;background:rgba(12,8,5,0.98);flex-direction:column;border-bottom:1px solid rgba(255,255,255,0.07)}
-.mobile-nav a{color:rgba(255,255,255,0.78);text-decoration:none;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 2rem;border-bottom:1px solid rgba(255,255,255,0.05);display:block;transition:color 0.2s}
+.mobile-nav a{color:rgba(255,255,255,0.92);text-decoration:none;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 2rem;border-bottom:1px solid rgba(255,255,255,0.05);display:block;transition:color 0.2s}
 .mobile-nav a:hover{color:var(--gold)}
 .mobile-nav a:last-child{color:var(--gold);border:none}
 
@@ -52,7 +52,7 @@ nav{
 .link-orange{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);text-decoration:none;font-weight:500;border-bottom:1px solid var(--orange);padding-bottom:1px}
 
 /* ===================== SHARED SECTION LABELS ===================== */
-.label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.7rem}
+.label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:#B8891A;display:block;margin-bottom:0.7rem}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;line-height:1.15;margin-bottom:1.2rem}
 .section-title em{font-style:italic;color:var(--gold)}
 .section-text{font-size:0.9rem;color:var(--muted);line-height:1.85}
@@ -74,17 +74,17 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .footer-crest{text-align:center;margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06)}
 .crest-sym{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--gold);display:block;line-height:1;margin-bottom:0.4rem}
 .crest-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:rgba(255,255,255,0.85);letter-spacing:0.22em;text-transform:uppercase}
-.crest-sub{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-top:0.3rem}
+.crest-sub{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.82);margin-top:0.3rem}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
-.footer-about p{font-size:0.8rem;color:rgba(255,255,255,0.38);line-height:1.85;margin-bottom:1.2rem}
+.footer-about p{font-size:0.8rem;color:rgba(255,255,255,0.88);line-height:1.85;margin-bottom:1.2rem}
 .footer-socials{display:flex;gap:0.7rem}
-.soc{width:36px;height:36px;border:1px solid rgba(255,255,255,0.14);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.45);font-size:0.8rem;text-decoration:none;transition:all 0.2s}
+.soc{width:36px;height:36px;border:1px solid rgba(255,255,255,0.28);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.88);font-size:0.8rem;text-decoration:none;transition:all 0.2s}
 .soc:hover{border-color:var(--gold);color:var(--gold)}
-.footer-col h5{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:1.2rem;font-weight:500}
+.footer-col h5{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.82);margin-bottom:1.2rem;font-weight:500}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
-.footer-col ul a{text-decoration:none;color:rgba(255,255,255,0.5);font-size:0.82rem;transition:color 0.2s}
+.footer-col ul a{text-decoration:none;color:rgba(255,255,255,0.78);font-size:0.82rem;transition:color 0.2s}
 .footer-col ul a:hover{color:var(--gold)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;color:rgba(255,255,255,0.22)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;color:rgba(255,255,255,0.55)}
 
 /* ===================== SHARED REVEAL ===================== */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity 0.7s,transform 0.7s}
@@ -96,18 +96,18 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 @keyframes kz{0%{transform:scale(1) translateX(0)}100%{transform:scale(1.08) translateX(-1%)}}
 .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.72) 100%)}
 .hero-body{position:relative;z-index:2;padding:130px 3rem 7rem;max-width:760px}
-.hero-eyebrow{font-size:0.7rem;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;font-weight:500;display:block}
+.hero-eyebrow{font-size:0.7rem;letter-spacing:0.26em;text-transform:uppercase;color:#FFFFFF;margin-bottom:1.2rem;font-weight:500;display:block}
 .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,6.5vw,6rem);font-weight:300;line-height:1.02;color:#fff;margin-bottom:1.5rem}
-.hero-title em{font-style:italic;color:var(--gold)}.hero-title strong{font-weight:600;display:block}
-.hero-sub{font-size:0.95rem;color:rgba(255,255,255,0.72);line-height:1.82;max-width:500px;margin-bottom:2.5rem}
+.hero-title em{font-style:italic;color:#C8735A}.hero-title strong{font-weight:600;display:block}
+.hero-sub{font-size:0.95rem;color:rgba(255,255,255,0.88);line-height:1.82;max-width:500px;margin-bottom:2.5rem}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
 .hero-strip{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.55);backdrop-filter:blur(8px);border-top:1px solid rgba(201,169,110,0.2);display:flex;align-items:center;padding:1rem 3rem;gap:1rem;z-index:3;flex-wrap:wrap}
-.hero-strip span{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.36);margin-right:0.8rem}
+.hero-strip span{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.80);margin-right:0.8rem}
 .hero-badge{border:1px solid rgba(201,169,110,0.36);padding:0.32rem 1rem;font-family:'Cormorant Garamond',serif;font-size:0.92rem;color:var(--gold-light);letter-spacing:0.05em;border-radius:2px}
 
 /* ===================== HOME: COLLECTION BANNER ===================== */
 .coll-bar{background:var(--charcoal);padding:3rem;text-align:center}
-.coll-bar p{font-size:0.66rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.32);margin-bottom:0.6rem}
+.coll-bar p{font-size:0.66rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.68);margin-bottom:0.6rem}
 .coll-bar h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.8rem);font-weight:300;color:#fff;letter-spacing:0.15em;text-transform:uppercase}
 .coll-bar h2 em{font-style:normal;color:var(--gold)}
 
@@ -123,7 +123,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .bc-body{position:absolute;bottom:0;left:0;right:0;padding:2rem;z-index:2}
 .bc-eyebrow{font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;display:block}
 .bc h3{font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:400;color:#fff;margin-bottom:0.4rem}
-.bc p{font-size:0.77rem;color:rgba(255,255,255,0.62);line-height:1.5;margin-bottom:1rem}
+.bc p{font-size:0.77rem;color:rgba(255,255,255,0.82);line-height:1.5;margin-bottom:1rem}
 .bc-corner{position:absolute;top:1.2rem;right:1.2rem;background:var(--gold);color:#1a1410;font-size:0.57rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.28rem 0.65rem;border-radius:1px;font-weight:600;z-index:2}
 
 /* ===================== HOME: FINISHES ===================== */
@@ -131,7 +131,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .fin-header-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
 .fin-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase}
 .fin-title em{font-style:italic;color:var(--gold)}
-.tab{font-size:0.7rem;letter-spacing:0.13em;text-transform:uppercase;padding:0.48rem 1.1rem;border-radius:2px;cursor:pointer;font-weight:500;border:1px solid transparent;transition:all 0.2s;background:none;color:#999}
+.tab{font-size:0.7rem;letter-spacing:0.13em;text-transform:uppercase;padding:0.48rem 1.1rem;border-radius:2px;cursor:pointer;font-weight:500;border:1px solid transparent;transition:all 0.2s;background:none;color:#6B6B6B}
 .tab.active{background:var(--charcoal);color:#fff}.tab:hover:not(.active){border-color:var(--gold);color:var(--gold)}
 .fin-grid{display:grid;grid-template-columns:repeat(5,1fr);padding:1.5rem 3rem 3rem}
 .swatch-card{cursor:pointer;padding:0.5rem;transition:transform 0.2s}.swatch-card:hover{transform:translateY(-3px)}
@@ -139,7 +139,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .swatch-inner{position:absolute;inset:0}
 .sw1{background:linear-gradient(160deg,#E8E0D8,#C8C0B8 50%,#D8D0C8)}.sw2{background:linear-gradient(160deg,#2A5C4A,#1A3C30 50%,#3A6A58)}.sw3{background:linear-gradient(160deg,#D88060,#C06040 50%,#E89070)}.sw4{background:linear-gradient(160deg,#F0EDE8,#E0DBD5 50%,#F5F2EE)}.sw5{background:linear-gradient(160deg,#E8E5E0,#D8D4CE 50%,#EEEAE5)}.sw6{background:linear-gradient(160deg,#8B6332,#C9954A 50%,#7A5520)}.sw7{background:linear-gradient(160deg,#3D2B1F,#6B4C3B 50%,#2A1810)}.sw8{background:linear-gradient(160deg,#C8C0B0,#A09880 50%,#D8D0C0)}.sw9{background:linear-gradient(160deg,#EFEFEF,#D8D8D8 50%,#F5F5F5)}.sw10{background:linear-gradient(160deg,#1A1A1A,#3A3A3A 50%,#282828)}
 .swatch-inner::after{content:'';position:absolute;inset:0;opacity:0.28;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E");mix-blend-mode:overlay}
-.swatch-name{font-size:0.75rem;color:var(--charcoal);font-weight:500;margin-bottom:0.18rem}.swatch-sub{font-size:0.66rem;color:#999;letter-spacing:0.05em}
+.swatch-name{font-size:0.75rem;color:var(--charcoal);font-weight:500;margin-bottom:0.18rem}.swatch-sub{font-size:0.66rem;color:#6B6B6B;letter-spacing:0.05em}
 
 /* ===================== HOME: SPLIT PANELS ===================== */
 .split-panels{display:grid;grid-template-columns:1fr 1fr}
@@ -149,7 +149,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .sp-right .sp-bg{background:linear-gradient(135deg,#1A100A,#3A2010 40%,#2A1808)}
 .sp-body{position:relative;z-index:2}
 .sp h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:#fff;margin-bottom:0.5rem;line-height:1.2}
-.sp h3 em{font-style:italic;color:var(--gold)}.sp p{font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:1.3rem;line-height:1.5}
+.sp h3 em{font-style:italic;color:var(--gold)}.sp p{font-size:0.78rem;color:rgba(255,255,255,0.80);margin-bottom:1.3rem;line-height:1.5}
 
 /* ===================== HOME: BEST SELLERS ===================== */
 .bestsellers{padding:5rem 3rem;background:var(--warm-white)}
@@ -162,7 +162,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .bs-inner{position:absolute;inset:0}
 .bs1{background:linear-gradient(160deg,#8B6332,#C9A55A 40%,#7A5520)}.bs2{background:linear-gradient(160deg,#D8CCC0,#C0B4A8 50%,#E0D4C8)}.bs3{background:linear-gradient(160deg,#5C4838,#8B7060 50%,#4A3828)}.bs4{background:linear-gradient(160deg,#F0EDE8,#D8D4CE 50%,#E8E5E0)}
 .bs-inner::after{content:'';position:absolute;inset:0;opacity:0.22;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E");mix-blend-mode:overlay}
-.bs-name{font-size:0.8rem;font-weight:500;color:var(--charcoal);margin-bottom:0.18rem}.bs-brand{font-size:0.68rem;color:#999;letter-spacing:0.08em;text-transform:uppercase}
+.bs-name{font-size:0.8rem;font-weight:500;color:var(--charcoal);margin-bottom:0.18rem}.bs-brand{font-size:0.68rem;color:#6B6B6B;letter-spacing:0.08em;text-transform:uppercase}
 
 /* ===================== HOME: VIDEO SECTION ===================== */
 .video-section{background:var(--charcoal);padding:5rem 3rem;text-align:center}
@@ -190,7 +190,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .why-item{padding:2.5rem 2rem;border-right:1px solid rgba(0,0,0,0.07);display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.8rem}
 .why-item:last-child{border-right:none}
 .why-icon{font-size:1.5rem;width:50px;height:50px;background:var(--cream);border-radius:50%;display:flex;align-items:center;justify-content:center}
-.why-item h4{font-size:0.86rem;font-weight:600;color:var(--charcoal)}.why-item p{font-size:0.76rem;color:#999;line-height:1.65}
+.why-item h4{font-size:0.86rem;font-weight:600;color:var(--charcoal)}.why-item p{font-size:0.76rem;color:#6B6B6B;line-height:1.65}
 
 /* ===================== MOBILE ===================== */
 @media(max-width:900px){
@@ -273,6 +273,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
       <h3>Heritage</h3>
       <p>Timeless wood, stone & abstract finishes for every interior surface</p>
       <a href="products.html#heritage" class="btn-outline">View Range →</a>
+      <a href="https://heritagesurfaces.com/collection/" target="_blank" rel="noopener" class="btn-outline" style="margin-left:0.6rem">Full Catalogue →</a>
     </div>
   </div>
   <div class="bc bc-2 reveal">
@@ -283,6 +284,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
       <h3>Hutch</h3>
       <p>Bold, contemporary laminates for modern homes and commercial spaces</p>
       <a href="products.html#hutch" class="btn-outline">View Range →</a>
+      <a href="https://mysurface.in/salasar_laminates/25" target="_blank" rel="noopener" class="btn-outline" style="margin-left:0.6rem">Full Catalogue →</a>
     </div>
   </div>
   <div class="bc bc-3 reveal">
@@ -324,25 +326,6 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 </div>
 
 <!-- ==================== SPLIT PANELS ==================== -->
-<div class="split-panels">
-  <div class="sp sp-left reveal">
-    <div class="sp-bg"></div>
-    <div class="sp-body">
-      <h3>Explore via <em>VR</em></h3>
-      <p>Visualise laminates in your space using our immersive VR experience at the showroom</p>
-      <a href="contact.html" class="btn-outline">Visit Showroom</a>
-    </div>
-  </div>
-  <div class="sp sp-right reveal">
-    <div class="sp-bg"></div>
-    <div class="sp-body">
-      <h3>Are You an <em>Architect?</em></h3>
-      <p>We partner closely with interior designers & architects for large projects across Pune</p>
-      <a href="contact.html" class="btn-outline">Get in Touch</a>
-    </div>
-  </div>
-</div>
-
 <!-- ==================== BEST SELLERS ==================== -->
 <div class="bestsellers">
   <div class="bs-header reveal">
@@ -354,21 +337,6 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
     <a href="products.html#hutch" class="bs-card reveal"><div class="bs-swatch"><div class="bs-inner bs2"></div></div><div class="bs-name">Warm Grey Stone</div><div class="bs-brand">Hutch</div></a>
     <a href="products.html#kiverli" class="bs-card reveal"><div class="bs-swatch"><div class="bs-inner bs3"></div></div><div class="bs-name">Dark Rosewood</div><div class="bs-brand">Kiverli</div></a>
     <a href="products.html#heritage" class="bs-card reveal"><div class="bs-swatch"><div class="bs-inner bs4"></div></div><div class="bs-name">Pearl Linen Matte</div><div class="bs-brand">Heritage</div></a>
-  </div>
-</div>
-
-<!-- ==================== VIDEO ==================== -->
-<div class="video-section reveal">
-  <span class="label">Experience It In Person</span>
-  <h2 class="vid-title">Visit Our <em>Showroom</em> in Pune</h2>
-  <div class="vid-frame">
-    <div class="vid-thumb">
-      <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
-      <button class="play-btn" onclick="this.closest('.vid-thumb').innerHTML='<iframe style=\'position:absolute;inset:0;width:100%;height:100%;border:0;\' src=\'https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1\' allowfullscreen></iframe>'">
-        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-      </button>
-      <div class="vid-cap"><p>Woodlam · Pune</p><h4>Our Showroom Experience</h4></div>
-    </div>
   </div>
 </div>
 
