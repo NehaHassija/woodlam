@@ -7,19 +7,19 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%233D2B1F'/><text font-size='72' font-family='Georgia,serif' fill='%23C9A96E' x='50%25' y='78' text-anchor='middle'>W</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#F5F0E8;--warm-white:#FAF7F2;--brown:#3D2B1F;--walnut:#6B4C3B;--gold:#C9A96E;--gold-light:#E8D5A3;--charcoal:#1E1E1E;--muted:#8A7060;--orange:#E07840}
+:root{--cream:#F5F0E8;--warm-white:#FAF7F2;--brown:#3D2B1F;--walnut:#6B4C3B;--gold:#C9A96E;--gold-light:#E8D5A3;--charcoal:#1E1E1E;--muted:#5C4840;--orange:#E07840}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--charcoal);overflow-x:hidden}
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:0 3rem;height:66px;background:rgba(15,11,8,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07);transition:box-shadow 0.3s}
 .logo{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-weight:600;letter-spacing:0.06em;color:#fff;text-decoration:none}.logo span{color:var(--gold)}
 .nav-links{list-style:none;display:flex;gap:2rem;align-items:center}
-.nav-links a{text-decoration:none;color:rgba(255,255,255,0.7);font-size:0.78rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.88);font-size:0.78rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
 .nav-cta{background:var(--gold)!important;color:#1a1410!important;padding:0.5rem 1.3rem!important;border-radius:2px;font-weight:600!important}
 .nav-cta:hover{background:var(--gold-light)!important;color:#1a1410!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:1px}
 .mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;z-index:199;background:rgba(12,8,5,0.98);flex-direction:column;border-bottom:1px solid rgba(255,255,255,0.07)}
-.mobile-nav a{color:rgba(255,255,255,0.78);text-decoration:none;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 2rem;border-bottom:1px solid rgba(255,255,255,0.05);display:block}
+.mobile-nav a{color:rgba(255,255,255,0.92);text-decoration:none;font-size:0.88rem;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 2rem;border-bottom:1px solid rgba(255,255,255,0.05);display:block}
 .mobile-nav a:hover{color:var(--gold)}.mobile-nav a:last-child{color:var(--gold);border:none}
 .btn-gold{background:var(--gold);color:#1a1410;padding:0.9rem 2.2rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:background 0.2s,transform 0.2s;display:inline-block}
 .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
@@ -31,11 +31,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 @keyframes kz{0%{transform:scale(1)}100%{transform:scale(1.06)}}
 .page-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.78) 0%,rgba(0,0,0,0.3) 100%)}
 .page-hero-body{position:relative;z-index:2;padding:130px 3rem 5rem;max-width:700px}
-.eyebrow{font-size:0.7rem;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500;display:block}
+.eyebrow{font-size:0.7rem;letter-spacing:0.26em;text-transform:uppercase;color:#FFFFFF;margin-bottom:1rem;font-weight:500;display:block}
 .page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.5vw,5.2rem);font-weight:300;color:#fff;line-height:1.08;margin-bottom:1.2rem}
 .page-title em{font-style:italic;color:var(--gold)}
-.page-subtitle{font-size:0.92rem;color:rgba(255,255,255,0.65);max-width:480px;line-height:1.78}
-.label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.7rem}
+.page-subtitle{font-size:0.92rem;color:rgba(255,255,255,0.82);max-width:480px;line-height:1.78}
+.label{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:#B8891A;display:block;margin-bottom:0.7rem}
 /* CONTACT MAIN LAYOUT */
 .contact-layout{display:grid;grid-template-columns:1fr 1.3fr;min-height:65vh}
 /* INFO PANEL */
@@ -46,14 +46,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .info-items{display:flex;flex-direction:column;gap:1.8rem;margin-bottom:3rem}
 .info-item{display:flex;gap:1.2rem;align-items:flex-start}
 .info-icon{width:44px;height:44px;background:rgba(201,169,110,0.12);border:1px solid rgba(201,169,110,0.22);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
-.info-text strong{display:block;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(201,169,110,0.65);margin-bottom:0.3rem;font-weight:500}
-.info-text p,.info-text a{font-size:0.88rem;color:rgba(245,240,232,0.82);line-height:1.65;text-decoration:none}
+.info-text strong{display:block;font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(201,169,110,1);margin-bottom:0.3rem;font-weight:500}
+.info-text p,.info-text a{font-size:0.88rem;color:rgba(245,240,232,1);line-height:1.65;text-decoration:none}
 .info-text a:hover{color:var(--gold)}
 /* HOURS */
 .hours-heading{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold-light);margin-bottom:1rem;font-weight:400}
 .hours-list{display:flex;flex-direction:column;gap:0.55rem}
 .hr{display:flex;justify-content:space-between;font-size:0.82rem;padding-bottom:0.55rem;border-bottom:1px solid rgba(201,169,110,0.1)}
-.hr:last-child{border-bottom:none}.hr-day{color:rgba(245,240,232,0.48)}.hr-time{color:var(--gold-light);font-weight:500}
+.hr:last-child{border-bottom:none}.hr-day{color:rgba(245,240,232,0.78)}.hr-time{color:var(--gold-light);font-weight:500}
 /* FORM PANEL */
 .form-panel{background:var(--warm-white);padding:4rem 3rem}
 .form-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--charcoal);line-height:1.18;margin-bottom:2rem}
@@ -61,7 +61,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 .contact-form{display:flex;flex-direction:column;gap:1.1rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .fg{display:flex;flex-direction:column;gap:0.35rem}
-.fg label{font-size:0.63rem;letter-spacing:0.12em;text-transform:uppercase;color:#aaa;font-weight:500}
+.fg label{font-size:0.63rem;letter-spacing:0.12em;text-transform:uppercase;color:#6B6B6B;font-weight:500}
 .fg input,.fg textarea,.fg select{padding:0.85rem 1rem;border:1.5px solid rgba(0,0,0,0.1);border-radius:2px;background:#fff;font-family:'DM Sans',sans-serif;font-size:0.88rem;color:var(--charcoal);outline:none;transition:border-color 0.2s;width:100%}
 .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--gold)}
 .fg textarea{resize:vertical;min-height:110px}
@@ -85,9 +85,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
 */
 .map-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.8rem;color:rgba(255,255,255,0.3);text-align:center;padding:2rem}
 .map-placeholder .map-icon{font-size:3.5rem;display:block;margin-bottom:0.5rem}
-.map-placeholder h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:rgba(255,255,255,0.45);font-weight:300}
+.map-placeholder h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:rgba(255,255,255,0.88);font-weight:300}
 .map-placeholder p{font-size:0.82rem;line-height:1.6;max-width:400px}
-.map-placeholder code{background:rgba(255,255,255,0.06);padding:0.5rem 1rem;border-radius:3px;font-size:0.75rem;color:rgba(201,169,110,0.65);display:block;margin-top:0.5rem}
+.map-placeholder code{background:rgba(255,255,255,0.06);padding:0.5rem 1rem;border-radius:3px;font-size:0.75rem;color:rgba(201,169,110,1);display:block;margin-top:0.5rem}
 /* CTA BAND */
 .cta-band{padding:5rem 3rem;text-align:center;background:var(--brown)}
 .cta-band h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:#fff;margin-bottom:1rem}
@@ -98,16 +98,16 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
 .footer-crest{text-align:center;margin-bottom:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06)}
 .crest-sym{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--gold);display:block;line-height:1;margin-bottom:0.4rem}
 .crest-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:rgba(255,255,255,0.85);letter-spacing:0.22em;text-transform:uppercase}
-.crest-sub{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-top:0.3rem}
+.crest-sub{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.82);margin-top:0.3rem}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
-.footer-about p{font-size:0.8rem;color:rgba(255,255,255,0.38);line-height:1.85;margin-bottom:1.2rem}
+.footer-about p{font-size:0.8rem;color:rgba(255,255,255,0.88);line-height:1.85;margin-bottom:1.2rem}
 .footer-socials{display:flex;gap:0.7rem}
-.soc{width:36px;height:36px;border:1px solid rgba(255,255,255,0.14);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.45);font-size:0.8rem;text-decoration:none;transition:all 0.2s}
+.soc{width:36px;height:36px;border:1px solid rgba(255,255,255,0.28);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.88);font-size:0.8rem;text-decoration:none;transition:all 0.2s}
 .soc:hover{border-color:var(--gold);color:var(--gold)}
-.footer-col h5{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:1.2rem;font-weight:500}
+.footer-col h5{font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.82);margin-bottom:1.2rem;font-weight:500}
 .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.6rem}
-.footer-col ul a{text-decoration:none;color:rgba(255,255,255,0.5);font-size:0.82rem;transition:color 0.2s}.footer-col ul a:hover{color:var(--gold)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;color:rgba(255,255,255,0.22)}
+.footer-col ul a{text-decoration:none;color:rgba(255,255,255,0.78);font-size:0.82rem;transition:color 0.2s}.footer-col ul a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.72rem;color:rgba(255,255,255,0.55)}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity 0.7s,transform 0.7s}.reveal.visible{opacity:1;transform:translateY(0)}
 @media(max-width:900px){
   nav{padding:0 1.5rem}.nav-links{display:none}.hamburger{display:flex}
@@ -174,9 +174,10 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
           <strong>Store Address</strong>
           <p>
             Woodlam – Interior Solutions<br>
-            Shop No.3, Business Plaza<br>
-            Timber Market<br>
-            Pune, Maharashtra – 411042<br>
+            [Shop No. / Building Name],<br>
+            [Street Name], [Area / Locality],<br>
+            Pune, Maharashtra – [PIN Code]<br>
+            <span style="font-size:0.78rem;color:rgba(201,169,110,0.9)">Near: [Landmark]</span>
           </p>
         </div>
       </div>
@@ -186,7 +187,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
         <div class="info-icon">📞</div>
         <div class="info-text">
           <strong>Phone</strong>
-          <p><a href="tel:+918468947191">+91 8468947191"</a></p>
+          <p><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
         </div>
       </div>
 
@@ -195,7 +196,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
         <div class="info-icon">📧</div>
         <div class="info-text">
           <strong>Email</strong>
-          <p><a href="/cdn-cgi/l/email-protection#f1989f979eb1869e9e959d909cdf929e"><span class="__cf_email__" data-cfemail="5f363139301f2830303b333e32713c30">info@woodlam.co</span></a></p>
+          <p><a href="/cdn-cgi/l/email-protection#f1989f979eb1869e9e959d909cdf929e"><span class="__cf_email__" data-cfemail="5f363139301f2830303b333e32713c30">[email&#160;protected]</span></a></p>
         </div>
       </div>
 
@@ -278,7 +279,7 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
     6. Make sure the iframe has: width="100%" height="450" style="border:0;"
     ══════════════════════════════════════════════════
     -->
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.465856900341!2d73.86286427459054!3d18.507838682583245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c03ff4ed8ac7%3A0xccd125ae2518c79f!2sWoodlam!5e0!3m2!1sen!2sus!4v1773717377948!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.465856900341!2d73.86286427459054!3d18.507838682583245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c03ff4ed8ac7%3A0xccd125ae2518c79f!2sWoodlam!5e0!3m2!1sen!2sus!4v1773717377948!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div>
 
