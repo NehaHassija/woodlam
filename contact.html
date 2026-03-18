@@ -225,15 +225,18 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
   <div class="form-panel">
     <span class="label">Send an Enquiry</span>
     <h2 class="form-title">Let's Find Your <em>Perfect</em> Finish</h2>
-    <form class="contact-form" onsubmit="handleSubmit(event)">
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Enquiry from Woodlam Website">
+      <input type="hidden" name="_next" value="https://www.woodlam.co/thankyou.html">
+      <input type="text" name="_gotcha" style="display:none">
       <div class="form-row">
-        <div class="fg"><label>Your Name *</label><input type="text" placeholder="Rahul Sharma" required></div>
-        <div class="fg"><label>Phone Number *</label><input type="tel" placeholder="+91 98765 43210" required></div>
+        <div class="fg"><label>Your Name *</label><input type="text" name="name" placeholder="Rahul Sharma" required></div>
+        <div class="fg"><label>Phone Number *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required></div>
       </div>
-      <div class="fg"><label>Email Address</label><input type="email" placeholder="rahul@example.com"></div>
+      <div class="fg"><label>Email Address</label><input type="email" name="_replyto" placeholder="rahul@example.com"></div>
       <div class="fg">
         <label>What are you looking for?</label>
-        <select>
+        <select name="looking_for">
           <option value="">Select a category</option>
           <option>Kitchen Laminates</option>
           <option>Wardrobe / Furniture Laminates</option>
@@ -245,14 +248,14 @@ footer{background:#111;border-top:1px solid rgba(201,169,110,0.12);padding:4.5re
       </div>
       <div class="fg">
         <label>Brand Preference</label>
-        <select>
+        <select name="brand_preference">
           <option value="">No preference / Not sure</option>
           <option>Heritage</option>
           <option>Hutch</option>
           <option>Kiverli</option>
         </select>
       </div>
-      <div class="fg"><label>Your Message</label><textarea placeholder="Tell us about your project, the space you're designing, or any questions you have..."></textarea></div>
+      <div class="fg"><label>Your Message</label><textarea name="message" placeholder="Tell us about your project, the space you're designing, or any questions you have..."></textarea></div>
       <button type="submit" class="form-submit">Send Enquiry →</button>
     </form>
   </div>
